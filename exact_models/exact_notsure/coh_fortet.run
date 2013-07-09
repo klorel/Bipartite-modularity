@@ -1,0 +1,15 @@
+model bipartito_exact.mod;
+#model bipartito_exact_dec_bin.mod;
+#model cliquepart.mod;
+
+include data;
+let cl:=min(p,n-p);
+
+option solver cplex;
+option cplex_options "timing=1 varsel=4 mipdisplay=4";
+
+#non metto cutpass=-1
+
+
+solve;
+display _total_solve_user_time, L, y, x;

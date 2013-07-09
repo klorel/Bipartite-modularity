@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{PhysRevE.85.046113}
+Cafieri, S., Caporossi, G., Hansen, P., Perron, S., Costa, A.: Finding
+  communities in networks in the strong and almost-strong sense.
+\newblock Physical Review E \textbf{85}(4), 046,113 (2012)
+
+\bibitem{PhysRevE.78.026121}
+Hu, Y., Chen, H., Zhang, P., Li, M., Di, Z., Fan, Y.: Comparative definition of
+  community and corresponding identifying algorithm.
+\newblock Physical Review E \textbf{78}(2), 026,121 (2008)
+
+\bibitem{1082924}
+Luccio, F., Sami, M.: On the decomposition of networks in minimally
+  interconnected subnetworks.
+\newblock IEEE Transactions on Circuit Theory \textbf{16}(2), 184 -- 188 (1969)
+
+\bibitem{Radicchi}
+Radicchi, F., Castellano, C., Cecconi, F., Loreto, V., Parisi, D.: Defining and
+  identifying communities in networks.
+\newblock Proceedings of the National Academy of Sciences of the U.S.A.
+  \textbf{101}(9), 2658--2663 (2004)
+
+\bibitem{wasserman1994}
+Wasserman, S., Faust, K.: Social Network Analysis. Methods and Applications.
+\newblock Cambridge University Pres, New York, USA (1994)
+
+\end{thebibliography}

@@ -1,0 +1,156 @@
+reset;
+# option solver knitroampl;
+option solver cbc;
+# option cbc_options "slog=1";
+param ZERO = 1e-4;
+# number of nodes
+param n >= 1, integer;
+#nodes in the first part
+param p >= 1, integer;
+
+set V := 1..n;
+set R:={u in V: u<=p};
+set B:={v in V: v>p};
+
+set RB =  R cross B;
+set E within RB;
+set V4 = RB cross RB;
+
+param m := 1.0*card(E);
+param inv_m := 1.0/m;
+# edge weights
+param c{RB} default 0;
+param d{u in V} := card({v in V: (u,v) in E or (v,u) in E});
+param w{(i,j) in RB  } := (c[i,j]-d[i]*d[j]*inv_m)*inv_m;
+# edge inclusions
+param I{E};
+
+data divorces.dat;
+# data SocialWorkJ.dat;
+# data wafa.dat;
+# data SupremeCourtnot.dat;
+# data SupremeCourtyes.dat;
+
+
+# set VertexCut{(i,j) in RB} := { (ii,jj) in E : (ii==i and jj!=j)or(ii!=i and jj==j) };
+
+var x{RB} binary;
+
+param activate1{ (iR,iB,jR,jB) in V4} default 0;
+param activate2{ (iR,iB,jR,jB) in V4} default 0;
+param activate3{ (iR,iB,jR,jB) in V4} default 0;
+param activate4{ (iR,iB,jR,jB) in V4} default 0;
+
+maximize modularity: sum{(i,j) in RB} w[i,j]*x[i,j];
+
+# subject to ctr { (i, j) in RB , ( ii, jj) in VertexCut[i,j]: card( VertexCut[i,j])>0 } : +x[i,jj]+x[ii,j]>=+x[i,j];
+
+subject to ctr1 { (iR,iB,jR,jB) in V4} : activate1[iR,iB,jR,jB]*(+x[iR,iB]+x[iR,jB]+x[jR,iB]-x[jR,jB])<=2;
+subject to ctr2 { (iR,iB,jR,jB) in V4} : activate2[iR,iB,jR,jB]*(+x[iR,iB]+x[iR,jB]-x[jR,iB]+x[jR,jB])<=2;
+subject to ctr3 { (iR,iB,jR,jB) in V4} : activate3[iR,iB,jR,jB]*(+x[iR,iB]-x[iR,jB]+x[jR,iB]+x[jR,jB])<=2;
+subject to ctr4 { (iR,iB,jR,jB) in V4} : activate4[iR,iB,jR,jB]*(-x[iR,iB]+x[iR,jB]+x[jR,iB]+x[jR,jB])<=2;
+
+
+param violated_cuts1;
+param violated_cuts2;
+param violated_cuts3;
+param violated_cuts4;
+
+# display modularity;
+# exit;
+
+repeat 
+{
+	solve modularity;
+	let violated_cuts1 := card({ (iR,iB,jR,jB) in V4 : +x[iR,iB]+x[iR,jB]+x[jR,iB]-x[jR,jB]>2});
+	let violated_cuts2 := card({ (iR,iB,jR,jB) in V4 : +x[iR,iB]+x[iR,jB]-x[jR,iB]+x[jR,jB]>2});
+	let violated_cuts3 := card({ (iR,iB,jR,jB) in V4 : +x[iR,iB]-x[iR,jB]+x[jR,iB]+x[jR,jB]>2});
+	let violated_cuts4 := card({ (iR,iB,jR,jB) in V4 : -x[iR,iB]+x[iR,jB]+x[jR,iB]+x[jR,jB]>2});
+	
+	display violated_cuts1, violated_cuts2, violated_cuts3, violated_cuts4;
+	
+	if(violated_cuts1>0) then 
+		let{ (iR,iB,jR,jB) in V4} activate1[iR,iB,jR,jB] := if(+x[iR,iB]+x[iR,jB]+x[jR,iB]-x[jR,jB]>2) then 1 else activate1[iR,iB,jR,jB] ;
+	else if(violated_cuts2>0) then 
+		let{ (iR,iB,jR,jB) in V4} activate2[iR,iB,jR,jB] := if(+x[iR,iB]+x[iR,jB]-x[jR,iB]+x[jR,jB]>2) then 1 else activate2[iR,iB,jR,jB] ;
+	else if(violated_cuts3>0) then 
+		let{ (iR,iB,jR,jB) in V4} activate3[iR,iB,jR,jB] := if(+x[iR,iB]-x[iR,jB]+x[jR,iB]+x[jR,jB]>2) then 1 else activate3[iR,iB,jR,jB] ;
+	else
+		let{ (iR,iB,jR,jB) in V4} activate4[iR,iB,jR,jB] := if(-x[iR,iB]+x[iR,jB]+x[jR,iB]+x[jR,jB]>2) then 1 else activate4[iR,iB,jR,jB] ;
+}until violated_cuts1+violated_cuts2+violated_cuts3+violated_cuts4 == 0;
+
+display modularity;
+
+
+# expand;
+
+# param violated_cuts1;
+# param violated_cuts2;
+# param violated_cuts3;
+# param violated_cuts4;
+
+
+# repeat 
+# {
+	# solve modularity;
+	# let violated_cuts1 := card({ (iR,iB,jR,jB) in RB : +x[iR,iB]+x[iR,jB]+x[jR,iB]-x[jR,jB]>2});
+	# let violated_cuts2 := card({ (iR,iB,jR,jB) in RB : +x[iR,iB]+x[iR,jB]-x[jR,iB]+x[jR,jB]>2});
+	# let violated_cuts3 := card({ (iR,iB,jR,jB) in RB : +x[iR,iB]-x[iR,jB]+x[jR,iB]+x[jR,jB]>2});
+	# let violated_cuts4 := card({ (iR,iB,jR,jB) in RB : -x[iR,iB]+x[iR,jB]+x[jR,iB]+x[jR,jB]>2});
+	
+	# display violated_cuts1, violated_cuts2, violated_cuts3, violated_cuts4;
+	
+	# if(violated_cuts1>0) then 
+		# let{ (iR,iB,jR,jB) in RB} activate1[iR,iB,jR,jB] := if(+x[iR,iB]+x[iR,jB]+x[jR,iB]-x[jR,jB]>2) then 1 else activate1[iR,iB,jR,jB] ;
+	# else if(violated_cuts2>0) then 
+		# let{ (iR,iB,jR,jB) in RB} activate2[iR,iB,jR,jB] := if(+x[iR,iB]+x[iR,jB]-x[jR,iB]+x[jR,jB]>2) then 1 else activate2[iR,iB,jR,jB] ;
+	# else if(violated_cuts3>0) then 
+		# let{ (iR,iB,jR,jB) in RB} activate3[iR,iB,jR,jB] := if(+x[iR,iB]-x[iR,jB]+x[jR,iB]+x[jR,jB]>2) then 1 else activate3[iR,iB,jR,jB] ;
+	# else
+		# let{ (iR,iB,jR,jB) in RB} activate4[iR,iB,jR,jB] := if(-x[iR,iB]+x[iR,jB]+x[jR,iB]+x[jR,jB]>2) then 1 else activate4[iR,iB,jR,jB] ;
+# }until violated_cuts1+violated_cuts2+violated_cuts3+violated_cuts4 == 0;
+
+# display modularity;
+
+# set Z := 1..nR cross 1..nB cross 1..nR+nB;
+
+# var y{1..nR+nB, 1..nR+nB} binary;
+
+# var z{Z} binary;
+# fix x;
+
+
+
+# minimize obj:1;
+
+# subject to s{n in 1..nR+nB}: sum{c in 1..nR+nB}y[n,c] =1;
+# subject to ctr{(i,j) in V1 }: sum{c in 1..nR+nB }z[i,j,c] = x[i,j];
+# subject to  ll{(i,j,c) in Z }: z[i,j,c]  >= 0;
+# subject to  uu{(i,j,c) in Z }: z[i,j,c] -y[i,c]-y[nR+j,c] >= -1;
+# subject to  lu{(i,j,c) in Z }: y[i,c]   -z[i,j,c]  >= 0;
+# subject to  ul{(i,j,c) in Z }: y[nR+j,c]-z[i,j,c]  >= 0;
+
+# solve obj;
+
+# param verif;
+# let verif := sum{ c in 1..nR+nB }( sum{(i,j) in E} ( z[i,j,c]*inv_m) - sum{(i,j) in V1} (kR[i]*kB[j]*z[i,j,c]*inv_m*inv_m) );
+
+# display verif;
+# display modularity;
+
+# for{ i in 1..nR}{
+	# for{ j in 1..nB}{
+		# if(x[i,j])then{
+			# printf "%d %d %f\n", i, j+nR, w[i,j];
+			# printf "\t%d %d\n", min{ c in 1..nR+nB : y[i,c]==1} c-1,  min{ c in 1..nR+nB : y[j+nR,c]==1} c-1;
+			# printf "\t%d %d\n", card({ c in 1..nR+nB : y[i,c]==1}),  card({ c in 1..nR+nB : y[j+nR,c]==1});
+		# }
+	# };
+# };
+
+# printf "">sol.txt;
+# for{ n in 1..nR+nB }{
+	# for{ c in 1..nR+nB  : y[n,c] == 1}{
+		# printf "%d\n", c-1>> sol.txt;
+	# };
+# };

@@ -1,0 +1,3181 @@
+* ENCODING=ISO-8859-1
+NAME            Iterations 63  Rows 143407  Cols 3220
+ XU x1        c1      
+ XU x2        c34     
+ XU x7        c45     
+ XU x10       c375    
+ XU x11       c381    
+ XU x12       c667    
+ XU x13       c670    
+ XU x14       c671    
+ XU x19       c781    
+ XU x20       c1546   
+ XU x25       c1561   
+ XU x32       c2329   
+ XU x35       c2341   
+ XU x36       c2411   
+ XU x41       c2971   
+ XU x42       c2973   
+ XU x72       c3123   
+ XU x74       c3128   
+ XU x75       c3138   
+ XU x76       c3139   
+ XU x81       c3144   
+ XU x82       c3147   
+ XU x84       c3151   
+ XU x92       c3152   
+ XU x95       c3153   
+ XU x97       c3156   
+ XU x105      c3159   
+ XU x106      c3160   
+ XU x111      c3165   
+ XU x112      c3169   
+ XU x114      c3174   
+ XU x115      c3175   
+ XU x116      c3183   
+ XU x119      c3192   
+ XU x121      c3193   
+ XU x122      c3199   
+ XU x132      c3200   
+ XU x137      c3201   
+ XU x138      c3901   
+ XU x142      c4681   
+ XU x143      c4796   
+ XU x147      c5139   
+ XU x149      c5185   
+ XU x153      c5191   
+ XU x155      c5200   
+ XU x161      c5204   
+ XU x162      c5461   
+ XU x163      c6163   
+ XU x164      c6164   
+ XU x165      c6165   
+ XU x166      c6166   
+ XU x167      c6167   
+ XU x168      c6168   
+ XU x172      c6169   
+ XU x177      c6170   
+ XU x178      c6171   
+ XU x180      c6172   
+ XU x185      c6173   
+ XU x186      c6174   
+ XU x188      c6241   
+ XU x192      c6321   
+ XU x193      c6790   
+ XU x194      c6792   
+ XU x195      c6794   
+ XU x196      c6795   
+ XU x197      c6797   
+ XU x200      c6798   
+ XU x201      c6799   
+ XU x202      c6807   
+ XU x208      c6808   
+ XU x209      c6810   
+ XU x217      c7006   
+ XU x230      c7021   
+ XU x231      c7136   
+ XU x233      c7137   
+ XU x238      c7395   
+ XU x240      c7900   
+ XU x241      c7910   
+ XU x242      c7911   
+ XU x244      c7969   
+ XU x255      c7971   
+ XU x257      c7986   
+ XU x264      c8005   
+ XU x266      c8049   
+ XU x274      c8583   
+ XU x277      c8587   
+ XU x281      c8591   
+ XU x282      c8592   
+ XU x284      c8594   
+ XU x289      c8598   
+ XU x297      c8607   
+ XU x298      c8611   
+ XU x299      c8613   
+ XU x300      c8617   
+ XU x301      c8620   
+ XU x302      c8634   
+ XU x304      c8643   
+ XU x305      c8650   
+ XU x306      c8652   
+ XU x307      c8653   
+ XU x310      c8657   
+ XU x312      c8660   
+ XU x315      c8697   
+ XU x316      c8835   
+ XU x317      c9367   
+ XU x318      c9371   
+ XU x319      c9384   
+ XU x320      c9385   
+ XU x322      c9387   
+ XU x327      c9391   
+ XU x329      c9394   
+ XU x330      c9399   
+ XU x332      c9401   
+ XU x333      c9409   
+ XU x335      c9422   
+ XU x337      c9439   
+ XU x339      c9440   
+ XU x340      c9441   
+ XU x341      c10141  
+ XU x342      c10255  
+ XU x344      c10257  
+ XU x345      c10276  
+ XU x347      c10286  
+ XU x348      c10339  
+ XU x349      c10921  
+ XU x356      c10953  
+ XU x357      c11175  
+ XU x358      c11177  
+ XU x360      c11178  
+ XU x361      c11189  
+ XU x362      c11194  
+ XU x364      c11238  
+ XU x365      c11707  
+ XU x367      c11709  
+ XU x368      c11712  
+ XU x371      c11714  
+ XU x372      c11719  
+ XU x373      c11727  
+ XU x374      c11733  
+ XU x380      c11739  
+ XU x385      c11740  
+ XU x392      c11741  
+ XU x395      c11742  
+ XU x396      c11743  
+ XU x401      c11744  
+ XU x402      c11746  
+ XU x403      c11748  
+ XU x404      c11749  
+ XU x405      c11752  
+ XU x406      c11756  
+ XU x407      c11758  
+ XU x420      c11762  
+ XU x424      c11763  
+ XU x426      c11767  
+ XU x436      c11768  
+ XU x441      c11769  
+ XU x442      c11772  
+ XU x443      c11773  
+ XU x444      c11958  
+ XU x445      c12481  
+ XU x446      c12482  
+ XU x447      c12483  
+ XU x448      c12485  
+ XU x452      c12486  
+ XU x453      c12487  
+ XU x455      c12492  
+ XU x457      c12497  
+ XU x459      c12498  
+ XU x465      c12499  
+ XU x466      c12500  
+ XU x468      c12502  
+ XU x472      c12504  
+ XU x473      c12505  
+ XU x474      c12507  
+ XU x475      c12513  
+ XU x476      c12515  
+ XU x480      c12518  
+ XU x481      c12519  
+ XU x482      c12529  
+ XU x483      c12534  
+ XU x484      c12549  
+ XU x485      c12550  
+ XU x486      c12552  
+ XU x487      c12556  
+ XU x488      c13358  
+ XU x492      c13361  
+ XU x505      c13411  
+ XU x506      c13424  
+ XU x508      c13425  
+ XU x512      c13430  
+ XU x514      c13440  
+ XU x515      c13442  
+ XU x516      c13445  
+ XU x520      c13446  
+ XU x521      c13462  
+ XU x522      c13464  
+ XU x523      c13500  
+ XU x525      c13512  
+ XU x526      c14041  
+ XU x527      c14132  
+ XU x540      c14134  
+ XU x556      c14148  
+ XU x561      c14149  
+ XU x562      c14213  
+ XU x568      c14214  
+ XU x570      c14239  
+ XU x571      c14247  
+ XU x573      c14275  
+ XU x574      c14276  
+ XU x585      c14278  
+ XU x601      c14611  
+ XU x603      c14913  
+ XU x604      c15019  
+ XU x605      c15050  
+ XU x606      c15057  
+ XU x607      c15391  
+ XU x608      c15701  
+ XU x612      c15702  
+ XU x613      c15772  
+ XU x614      c15779  
+ XU x615      c15783  
+ XU x619      c15786  
+ XU x620      c15799  
+ XU x621      c15836  
+ XU x625      c15838  
+ XU x626      c15848  
+ XU x628      c16381  
+ XU x632      c16926  
+ XU x634      c17123  
+ XU x635      c17143  
+ XU x636      c17145  
+ XU x640      c17146  
+ XU x641      c17184  
+ XU x642      c17205  
+ XU x643      c17926  
+ XU x644      c18374  
+ XU x645      c18375  
+ XU x646      c18377  
+ XU x647      c18379  
+ XU x648      c18380  
+ XU x652      c18381  
+ XU x658      c18383  
+ XU x659      c18385  
+ XU x660      c18386  
+ XU x661      c18387  
+ XU x663      c18389  
+ XU x665      c18390  
+ XU x666      c18391  
+ XU x668      c18393  
+ XU x672      c18394  
+ XU x673      c19036  
+ XU x674      c19039  
+ XU x675      c19101  
+ XU x676      c19107  
+ XU x677      c19126  
+ XU x679      c19134  
+ XU x680      c19141  
+ XU x681      c19817  
+ XU x682      c19818  
+ XU x683      c19822  
+ XU x684      c19824  
+ XU x686      c19830  
+ XU x687      c19848  
+ XU x700      c19859  
+ XU x704      c19864  
+ XU x705      c20281  
+ XU x706      c20737  
+ XU x707      c20739  
+ XU x708      c20742  
+ XU x715      c20743  
+ XU x720      c20744  
+ XU x721      c20746  
+ XU x722      c20748  
+ XU x723      c20749  
+ XU x724      c20750  
+ XU x725      c20753  
+ XU x726      c20755  
+ XU x727      c21061  
+ XU x740      c21375  
+ XU x743      c21772  
+ XU x744      c22156  
+ XU x746      c22170  
+ XU x748      c22188  
+ XU x755      c22204  
+ XU x761      c22254  
+ XU x762      c22621  
+ XU x763      c23151  
+ XU x764      c23167  
+ XU x765      c23212  
+ XU x767      c23213  
+ XU x780      c23216  
+ XU x781      c23221  
+ XU x784      c23226  
+ XU x786      c23229  
+ XU x801      c24138  
+ XU x802      c24555  
+ XU x803      c24751  
+ XU x804      c24908  
+ XU x805      c25308  
+ XU x806      c25692  
+ XU x807      c25693  
+ XU x820      c25694  
+ XU x824      c25695  
+ XU x826      c25719  
+ XU x827      c25720  
+ XU x828      c26057  
+ XU x836      c26058  
+ XU x838      c26059  
+ XU x840      c26060  
+ XU x841      c26061  
+ XU x842      c26062  
+ XU x852      c26063  
+ XU x855      c26064  
+ XU x858      c26065  
+ XU x859      c26066  
+ XU x866      c26067  
+ XU x870      c26759  
+ XU x871      c26823  
+ XU x875      c26900  
+ XU x876      c26902  
+ XU x879      c26919  
+ XU x881      c26934  
+ XU x882      c26957  
+ XU x888      c27676  
+ XU x898      c27791  
+ XU x905      c28244  
+ XU x906      c28287  
+ XU x911      c28288  
+ XU x912      c28290  
+ XU x914      c28305  
+ XU x915      c28310  
+ XU x916      c28314  
+ XU x921      c28319  
+ XU x922      c29004  
+ XU x928      c29006  
+ XU x930      c29023  
+ XU x931      c29024  
+ XU x932      c30010  
+ XU x933      c30011  
+ XU x939      c30012  
+ XU x944      c30013  
+ XU x945      c30014  
+ XU x946      c30016  
+ XU x948      c30017  
+ XU x950      c30054  
+ XU x951      c30400  
+ XU x952      c30417  
+ XU x954      c30720  
+ XU x955      c31344  
+ XU x956      c31357  
+ XU x959      c31589  
+ XU x962      c31592  
+ XU x968      c32075  
+ XU x970      c32079  
+ XU x971      c32085  
+ XU x972      c32090  
+ XU x973      c32124  
+ XU x974      c32464  
+ XU x975      c32904  
+ XU x977      c32913  
+ XU x979      c32917  
+ XU x982      c33070  
+ XU x985      c33489  
+ XU x1008     c33789  
+ XU x1010     c33798  
+ XU x1011     c33840  
+ XU x1012     c33916  
+ XU x1013     c34142  
+ XU x1014     c34143  
+ XU x1019     c34144  
+ XU x1022     c34145  
+ XU x1025     c34146  
+ XU x1030     c34147  
+ XU x1032     c34148  
+ XU x1033     c34149  
+ XU x1042     c34150  
+ XU x1049     c34151  
+ XU x1052     c34831  
+ XU x1053     c34833  
+ XU x1055     c34840  
+ XU x1057     c35095  
+ XU x1059     c35748  
+ XU x1061     c35881  
+ XU x1062     c35961  
+ XU x1063     c36541  
+ XU x1064     c36543  
+ XU x1066     c36544  
+ XU x1067     c36547  
+ XU x1068     c36548  
+ XU x1069     c36549  
+ XU x1070     c36550  
+ XU x1072     c36551  
+ XU x1075     c36552  
+ XU x1077     c36553  
+ XU x1082     c36554  
+ XU x1089     c37350  
+ XU x1097     c37351  
+ XU x1098     c37352  
+ XU x1100     c37354  
+ XU x1101     c37355  
+ XU x1102     c37356  
+ XU x1104     c37357  
+ XU x1106     c37359  
+ XU x1107     c37362  
+ XU x1108     c37752  
+ XU x1110     c37755  
+ XU x1117     c38168  
+ XU x1118     c38987  
+ XU x1128     c38988  
+ XU x1130     c39531  
+ XU x1131     c39593  
+ XU x1132     c39594  
+ XU x1133     c39595  
+ XU x1134     c39597  
+ XU x1137     c39600  
+ XU x1139     c39601  
+ XU x1142     c39602  
+ XU x1150     c39604  
+ XU x1161     c39605  
+ XU x1162     c39607  
+ XU x1166     c39608  
+ XU x1169     c40351  
+ XU x1177     c40386  
+ XU x1178     c40437  
+ XU x1179     c40438  
+ XU x1180     c40440  
+ XU x1182     c40471  
+ XU x1183     c40491  
+ XU x1184     c40508  
+ XU x1185     c41089  
+ XU x1186     c41090  
+ XU x1188     c41094  
+ XU x1192     c41095  
+ XU x1197     c41097  
+ XU x1198     c41098  
+ XU x1213     c41101  
+ XU x1222     c41103  
+ XU x1231     c41104  
+ XU x1234     c41105  
+ XU x1235     c41107  
+ XU x1236     c41176  
+ XU x1239     c41420  
+ XU x1251     c41968  
+ XU x1252     c41969  
+ XU x1253     c41970  
+ XU x1260     c41971  
+ XU x1265     c41972  
+ XU x1270     c41973  
+ XU x1273     c41974  
+ XU x1288     c41976  
+ XU x1289     c41977  
+ XU x1290     c41978  
+ XU x1291     c41979  
+ XU x1294     c41981  
+ XU x1297     c41983  
+ XU x1298     c42436  
+ XU x1300     c42495  
+ XU x1304     c42504  
+ XU x1305     c42507  
+ XU x1307     c42671  
+ XU x1312     c42672  
+ XU x1313     c42687  
+ XU x1314     c42688  
+ XU x1317     c43429  
+ XU x1318     c43430  
+ XU x1320     c43446  
+ XU x1322     c43974  
+ XU x1325     c43985  
+ XU x1330     c43995  
+ XU x1332     c44290  
+ XU x1333     c44294  
+ XU x1335     c44296  
+ XU x1337     c44461  
+ XU x1338     c45085  
+ XU x1339     c45241  
+ XU x1340     c45533  
+ XU x1341     c45534  
+ XU x1342     c45537  
+ XU x1343     c45545  
+ XU x1344     c45553  
+ XU x1345     c46021  
+ XU x1346     c46314  
+ XU x1347     c46325  
+ XU x1348     c47374  
+ XU x1349     c47395  
+ XU x1350     c47547  
+ XU x1351     c47566  
+ XU x1352     c47591  
+ XU x1353     c47967  
+ XU x1354     c48391  
+ XU x1355     c48429  
+ XU x1356     c49107  
+ XU x1357     c49175  
+ XU x1358     c49212  
+ XU x1372     c49213  
+ XU x1374     c49420  
+ XU x1381     c49684  
+ XU x1385     c49685  
+ XU x1392     c49888  
+ XU x1395     c49901  
+ XU x1396     c49906  
+ XU x1401     c49942  
+ XU x1402     c50430  
+ XU x1417     c51512  
+ XU x1431     c51519  
+ XU x1434     c51550  
+ XU x1435     c51557  
+ XU x1436     c52239  
+ XU x1439     c52276  
+ XU x1443     c53067  
+ XU x1444     c53402  
+ XU x1445     c53430  
+ XU x1446     c53508  
+ XU x1447     c53717  
+ XU x1452     c54279  
+ XU x1457     c54624  
+ XU x1458     c55384  
+ XU x1459     c55385  
+ XU x1460     c55459  
+ XU x1461     c55460  
+ XU x1462     c55471  
+ XU x1463     c55474  
+ XU x1464     c55489  
+ XU x1466     c55494  
+ XU x1467     c55510  
+ XU x1468     c55545  
+ XU x1472     c55553  
+ XU x1477     c55579  
+ XU x1495     c55609  
+ XU x1497     c55619  
+ XU x1498     c56185  
+ XU x1500     c56205  
+ XU x1501     c56209  
+ XU x1502     c56222  
+ XU x1504     c56225  
+ XU x1506     c56231  
+ XU x1508     c56958  
+ XU x1513     c56980  
+ XU x1517     c56982  
+ XU x1518     c56984  
+ XU x1530     c57723  
+ XU x1533     c57726  
+ XU x1535     c57761  
+ XU x1537     c57854  
+ XU x1539     c58507  
+ XU x1542     c58754  
+ XU x1543     c59330  
+ XU x1545     c60070  
+ XU x1549     c60102  
+ XU x1553     c60103  
+ XU x1554     c60842  
+ XU x1555     c60918  
+ XU x1556     c60940  
+ XU x1559     c61002  
+ XU x1560     c61008  
+ XU x1562     c61046  
+ XU x1568     c61047  
+ XU x1570     c61698  
+ XU x1571     c61700  
+ XU x1572     c61701  
+ XU x1573     c61718  
+ XU x1585     c61719  
+ XU x1590     c61735  
+ XU x1592     c61736  
+ XU x1609     c61737  
+ XU x1617     c61786  
+ XU x1618     c61839  
+ XU x1624     c61852  
+ XU x1630     c62552  
+ XU x1633     c62569  
+ XU x1640     c62586  
+ XU x1652     c62636  
+ XU x1655     c62638  
+ XU x1657     c63331  
+ XU x1659     c63333  
+ XU x1662     c63365  
+ XU x1663     c63378  
+ XU x1664     c63383  
+ XU x1667     c63384  
+ XU x1669     c63385  
+ XU x1681     c63415  
+ XU x1682     c63993  
+ XU x1695     c64503  
+ XU x1697     c64720  
+ XU x1698     c64724  
+ XU x1700     c64774  
+ XU x1701     c65968  
+ XU x1704     c66556  
+ XU x1706     c66557  
+ XU x1717     c66675  
+ XU x1729     c66684  
+ XU x1730     c66704  
+ XU x1731     c66708  
+ XU x1732     c66711  
+ XU x1733     c67396  
+ XU x1734     c67399  
+ XU x1735     c67418  
+ XU x1737     c67874  
+ XU x1738     c68317  
+ XU x1739     c68321  
+ XU x1742     c68327  
+ XU x1745     c68332  
+ XU x1746     c68337  
+ XU x1759     c69339  
+ XU x1775     c69351  
+ XU x1777     c69737  
+ XU x1778     c69738  
+ XU x1780     c69742  
+ XU x1781     c69744  
+ XU x1782     c69747  
+ XU x1784     c69766  
+ XU x1786     c69767  
+ XU x1788     c69776  
+ XU x1793     c69823  
+ XU x1797     c70220  
+ XU x1815     c70258  
+ XU x1817     c70707  
+ XU x1819     c70730  
+ XU x1822     c70735  
+ XU x1823     c70750  
+ XU x1824     c70771  
+ XU x1827     c70776  
+ XU x1829     c70787  
+ XU x1834     c70791  
+ XU x1841     c70794  
+ XU x1842     c70795  
+ XU x1847     c70797  
+ XU x1848     c70872  
+ XU x1850     c70906  
+ XU x1851     c71719  
+ XU x1852     c71723  
+ XU x1853     c72425  
+ XU x1854     c72814  
+ XU x1855     c72904  
+ XU x1858     c72907  
+ XU x1859     c72985  
+ XU x1860     c73010  
+ XU x1861     c73139  
+ XU x1862     c73205  
+ XU x1866     c73267  
+ XU x1868     c73268  
+ XU x1872     c73269  
+ XU x1873     c73507  
+ XU x1874     c74560  
+ XU x1875     c74703  
+ XU x1876     c75194  
+ XU x1877     c75196  
+ XU x1879     c75411  
+ XU x1880     c75413  
+ XU x1886     c76026  
+ XU x1887     c76028  
+ XU x1889     c76029  
+ XU x1892     c76047  
+ XU x1895     c76049  
+ XU x1897     c76738  
+ XU x1898     c76758  
+ XU x1899     c77531  
+ XU x1900     c77679  
+ XU x1902     c78048  
+ XU x1903     c78051  
+ XU x1904     c78062  
+ XU x1908     c78141  
+ XU x1909     c78152  
+ XU x1910     c78233  
+ XU x1913     c78240  
+ XU x1914     c79093  
+ XU x1920     c79810  
+ XU x1929     c79812  
+ XU x1931     c79822  
+ XU x1932     c79859  
+ XU x1935     c79912  
+ XU x1938     c80187  
+ XU x1939     c80196  
+ XU x1942     c80646  
+ XU x1948     c81317  
+ XU x1950     c81319  
+ XU x1953     c81327  
+ XU x1958     c81465  
+ XU x1960     c81468  
+ XU x1961     c81707  
+ XU x1962     c82377  
+ XU x1964     c82424  
+ XU x1968     c83194  
+ XU x1978     c83294  
+ XU x1985     c83311  
+ XU x1991     c83313  
+ XU x1992     c83329  
+ XU x1993     c83371  
+ XU x1994     c84135  
+ XU x1996     c84940  
+ XU x1998     c85314  
+ XU x2002     c85325  
+ XU x2003     c85333  
+ XU x2007     c85580  
+ XU x2015     c85588  
+ XU x2017     c85590  
+ XU x2018     c85753  
+ XU x2019     c86470  
+ XU x2020     c86471  
+ XU x2022     c86566  
+ XU x2023     c86569  
+ XU x2024     c86573  
+ XU x2025     c87088  
+ XU x2026     c87109  
+ XU x2028     c87110  
+ XU x2032     c87131  
+ XU x2037     c87151  
+ XU x2038     c87152  
+ XU x2055     c87162  
+ XU x2057     c87172  
+ XU x2060     c87178  
+ XU x2061     c87186  
+ XU x2062     c87867  
+ XU x2063     c87871  
+ XU x2064     c87874  
+ XU x2066     c87875  
+ XU x2067     c87934  
+ XU x2068     c87937  
+ XU x2069     c87940  
+ XU x2070     c87953  
+ XU x2077     c87988  
+ XU x2078     c88007  
+ XU x2089     c88008  
+ XU x2097     c88010  
+ XU x2100     c88050  
+ XU x2101     c88064  
+ XU x2102     c88645  
+ XU x2104     c88668  
+ XU x2105     c88671  
+ XU x2106     c88672  
+ XU x2108     c88673  
+ XU x2109     c88679  
+ XU x2110     c88686  
+ XU x2112     c88688  
+ XU x2114     c88689  
+ XU x2115     c88747  
+ XU x2116     c88764  
+ XU x2117     c89383  
+ XU x2118     c89555  
+ XU x2120     c89560  
+ XU x2125     c90077  
+ XU x2126     c90081  
+ XU x2129     c90102  
+ XU x2130     c90255  
+ XU x2133     c90270  
+ XU x2135     c91027  
+ XU x2139     c91557  
+ XU x2141     c91563  
+ XU x2142     c91573  
+ XU x2144     c91875  
+ XU x2145     c91885  
+ XU x2146     c91918  
+ XU x2147     c91947  
+ XU x2148     c91972  
+ XU x2149     c92550  
+ XU x2154     c92556  
+ XU x2155     c92578  
+ XU x2157     c92599  
+ XU x2161     c92650  
+ XU x2169     c92656  
+ XU x2170     c92673  
+ XU x2171     c93128  
+ XU x2172     c93135  
+ XU x2173     c93599  
+ XU x2175     c93852  
+ XU x2179     c94127  
+ XU x2181     c94149  
+ XU x2182     c94260  
+ XU x2185     c94314  
+ XU x2198     c94921  
+ XU x2200     c94981  
+ XU x2209     c95086  
+ XU x2218     c95129  
+ XU x2219     c95346  
+ XU x2220     c95478  
+ XU x2221     c95519  
+ XU x2222     c95600  
+ XU x2228     c95735  
+ XU x2229     c96610  
+ XU x2230     c96700  
+ XU x2237     c96866  
+ XU x2238     c97118  
+ XU x2240     c97196  
+ XU x2249     c97243  
+ XU x2258     c97390  
+ XU x2259     c97405  
+ XU x2261     c97460  
+ XU x2262     c97467  
+ XU x2263     c97480  
+ XU x2264     c98110  
+ XU x2266     c98266  
+ XU x2268     c98281  
+ XU x2269     c99375  
+ XU x2277     c99580  
+ XU x2278     c99788  
+ XU x2280     c99839  
+ XU x2282     c100758 
+ XU x2295     c100923 
+ XU x2297     c101135 
+ XU x2298     c101144 
+ XU x2299     c101157 
+ XU x2301     c101178 
+ XU x2302     c101198 
+ XU x2303     c101217 
+ XU x2304     c101235 
+ XU x2307     c101268 
+ XU x2309     c101283 
+ XU x2318     c101310 
+ XU x2322     c101694 
+ XU x2329     c101724 
+ XU x2338     c101753 
+ XU x2339     c101781 
+ XU x2342     c101808 
+ XU x2348     c101906 
+ XU x2350     c101928 
+ XU x2353     c102279 
+ XU x2358     c102331 
+ XU x2360     c102449 
+ XU x2361     c102539 
+ XU x2362     c102594 
+ XU x2369     c102620 
+ XU x2372     c102735 
+ XU x2378     c102755 
+ XU x2379     c102946 
+ XU x2382     c103000 
+ XU x2384     c103076 
+ XU x2388     c105378 
+ XU x2390     c106861 
+ XU x2393     c108424 
+ XU x2395     c108462 
+ XU x2396     c108499 
+ XU x2398     c108535 
+ XU x2400     c109203 
+ XU x2418     c109240 
+ XU x2419     c109351 
+ XU x2420     c109981 
+ XU x2421     c109985 
+ XU x2424     c110024 
+ XU x2425     c110061 
+ XU x2426     c110097 
+ XU x2428     c110131 
+ XU x2432     c110166 
+ XU x2433     c110763 
+ XU x2436     c110764 
+ XU x2437     c110800 
+ XU x2442     c110803 
+ XU x2443     c110839 
+ XU x2444     c110876 
+ XU x2445     c111684 
+ XU x2446     c111879 
+ XU x2447     c111936 
+ XU x2448     c112014 
+ XU x2449     c112104 
+ XU x2450     c112161 
+ XU x2451     c112223 
+ XU x2452     c112259 
+ XU x2453     c112269 
+ XU x2454     c112278 
+ XU x2460     c112287 
+ XU x2464     c112293 
+ XU x2465     c112321 
+ XU x2466     c112990 
+ XU x2467     c113063 
+ XU x2469     c113067 
+ XU x2470     c113080 
+ XU x2471     c113107 
+ XU x2473     c113151 
+ XU x2474     c113358 
+ XU x2475     c113389 
+ XU x2477     c113419 
+ XU x2478     c113448 
+ XU x2479     c113476 
+ XU x2480     c113503 
+ XU x2481     c113891 
+ XU x2482     c113929 
+ XU x2483     c114167 
+ XU x2484     c114198 
+ XU x2485     c114915 
+ XU x2486     c115730 
+ XU x2488     c115817 
+ XU x2489     c115844 
+ XU x2490     c116131 
+ XU x2492     c116247 
+ XU x2494     c116523 
+ XU x2498     c116744 
+ XU x2500     c116766 
+ XU x2502     c116791 
+ XU x2503     c116826 
+ XU x2505     c116844 
+ XU x2507     c116845 
+ XU x2508     c116868 
+ XU x2509     c117254 
+ XU x2510     c117375 
+ XU x2511     c117966 
+ XU x2512     c118076 
+ XU x2513     c118288 
+ XU x2517     c118331 
+ XU x2518     c118536 
+ XU x2519     c118988 
+ XU x2520     c119178 
+ XU x2521     c119303 
+ XU x2531     c119333 
+ XU x2532     c119656 
+ XU x2533     c119704 
+ XU x2534     c120149 
+ XU x2537     c120425 
+ XU x2538     c120436 
+ XU x2539     c120455 
+ XU x2540     c120512 
+ XU x2548     c120539 
+ XU x2549     c120637 
+ XU x2551     c120659 
+ XU x2554     c120680 
+ XU x2555     c120700 
+ XU x2556     c120737 
+ XU x2557     c120770 
+ XU x2568     c120812 
+ XU x2570     c120824 
+ XU x2573     c120835 
+ XU x2574     c121008 
+ XU x2576     c121212 
+ XU x2584     c121257 
+ XU x2586     c121457 
+ XU x2591     c121547 
+ XU x2592     c121575 
+ XU x2593     c121602 
+ XU x2602     c121628 
+ XU x2604     c121763 
+ XU x2605     c121789 
+ XU x2606     c122511 
+ XU x2608     c122697 
+ XU x2609     c122734 
+ XU x2612     c122829 
+ XU x2613     c122842 
+ XU x2614     c122913 
+ XU x2619     c122934 
+ XU x2622     c122980 
+ XU x2625     c123130 
+ XU x2626     c123256 
+ XU x2638     c123278 
+ XU x2639     c123299 
+ XU x2642     c123379 
+ XU x2643     c123985 
+ XU x2644     c124099 
+ XU x2645     c124338 
+ XU x2646     c124644 
+ XU x2647     c124701 
+ XU x2654     c124728 
+ XU x2659     c124779 
+ XU x2669     c124869 
+ XU x2670     c124889 
+ XU x2672     c124926 
+ XU x2673     c124943 
+ XU x2675     c125024 
+ XU x2676     c125095 
+ XU x2677     c125404 
+ XU x2678     c125464 
+ XU x2679     c126183 
+ XU x2689     c126232 
+ XU x2692     c126325 
+ XU x2694     c126596 
+ XU x2695     c127029 
+ XU x2696     c127052 
+ XU x2697     c127056 
+ XU x2698     c127264 
+ XU x2705     c127281 
+ XU x2709     c127339 
+ XU x2714     c127429 
+ XU x2720     c127885 
+ XU x2727     c128004 
+ XU x2729     c128023 
+ XU x2730     c128465 
+ XU x2732     c128526 
+ XU x2733     c128583 
+ XU x2734     c128648 
+ XU x2737     c128739 
+ XU x2742     c128951 
+ XU x2743     c129034 
+ XU x2745     c129118 
+ XU x2748     c129250 
+ XU x2752     c129286 
+ XU x2753     c129309 
+ XU x2755     c129886 
+ XU x2756     c130026 
+ XU x2757     c130067 
+ XU x2758     c130086 
+ XU x2759     c130191 
+ XU x2762     c130729 
+ XU x2764     c130819 
+ XU x2767     c130852 
+ XU x2770     c130876 
+ XU x2775     c130907 
+ XU x2778     c131064 
+ XU x2779     c131309 
+ XU x2786     c131370 
+ XU x2787     c131399 
+ XU x2788     c131427 
+ XU x2793     c131454 
+ XU x2796     c131480 
+ XU x2799     c131505 
+ XU x2802     c131574 
+ XU x2804     c131595 
+ XU x2807     c131615 
+ XU x2813     c131634 
+ XU x2815     c131652 
+ XU x2816     c131846 
+ XU x2817     c132026 
+ XU x2820     c132059 
+ XU x2821     c132122 
+ XU x2822     c132209 
+ XU x2823     c132287 
+ XU x2824     c132334 
+ XU x2825     c132356 
+ XU x2827     c132377 
+ XU x2830     c132397 
+ XU x2832     c132434 
+ XU x2833     c132451 
+ XU x2834     c132467 
+ XU x2837     c132482 
+ XU x2838     c132496 
+ XU x2840     c132964 
+ XU x2843     c132981 
+ XU x2844     c133059 
+ XU x2846     c133147 
+ XU x2848     c133225 
+ XU x2851     c133359 
+ XU x2854     c133375 
+ XU x2859     c133414 
+ XU x2861     c133452 
+ XU x2869     c133525 
+ XU x2875     c133526 
+ XU x2877     c133594 
+ XU x2880     c133659 
+ XU x2885     c133777 
+ XU x2887     c133778 
+ XU x2888     c133903 
+ XU x2893     c133924 
+ XU x2894     c133945 
+ XU x2897     c134120 
+ XU x2898     c134123 
+ XU x2899     c134127 
+ XU x2902     c134134 
+ XU x2903     c134140 
+ XU x2906     c134180 
+ XU x2907     c134218 
+ XU x2908     c134255 
+ XU x2909     c134392 
+ XU x2910     c134393 
+ XU x2912     c134425 
+ XU x2913     c134453 
+ XU x2917     c134543 
+ XU x2945     c134621 
+ XU x2946     c135109 
+ XU x2947     c135304 
+ XU x2948     c135397 
+ XU x2949     c135470 
+ XU x2950     c135551 
+ XU x2951     c135571 
+ XU x2953     c135848 
+ XU x2954     c136013 
+ XU x2955     c136100 
+ XU x2956     c136178 
+ XU x2960     c136377 
+ XU x2961     c136406 
+ XU x2963     c136431 
+ XU x2964     c136560 
+ XU x2967     c136597 
+ XU x2968     c136633 
+ XU x2969     c136668 
+ XU x2970     c136798 
+ XU x2971     c136828 
+ XU x2972     c136885 
+ XU x2973     c136912 
+ XU x2975     c136969 
+ XU x2976     c137010 
+ XU x2977     c137053 
+ XU x2979     c137071 
+ XU x2981     c137073 
+ XU x2983     c137092 
+ XU x2985     c137110 
+ XU x2986     c137281 
+ XU x2987     c137329 
+ XU x2988     c137739 
+ XU x2989     c138373 
+ XU x2990     c138565 
+ XU x2991     c138628 
+ XU x2992     c138685 
+ XU x2995     c138793 
+ XU x2999     c139251 
+ XU x3000     c139408 
+ XU x3005     c139411 
+ XU x3007     c139437 
+ XU x3008     c140212 
+ XU x3010     c140269 
+ XU x3011     c140311 
+ XU x3012     c140439 
+ XU x3013     c140949 
+ XU x3014     c141027 
+ XU x3015     c141114 
+ XU x3016     c141159 
+ XU x3017     c141219 
+ XU x3018     c141495 
+ XU x3021     c141582 
+ XU x3022     c141609 
+ XU x3027     c141807 
+ XU x3031     c141855 
+ XU x3032     c141908 
+ XU x3033     c141939 
+ XU x3034     c141950 
+ XU x3035     c141957 
+ XU x3036     c141959 
+ XU x3037     c142468 
+ XU x3038     c142531 
+ XU x3039     c142627 
+ XL x3040     c142741 
+ XL x3041     c142745 
+ XL x3042     c142753 
+ XL x3044     c142755 
+ XL x3045     c142793 
+ XL x3046     c142796 
+ XL x3047     c142797 
+ XL x3048     c142799 
+ XL x3049     c142801 
+ XL x3050     c142807 
+ XL x3051     c142816 
+ XL x3052     c142821 
+ XL x3054     c142832 
+ XL x3055     c142838 
+ XL x3056     c142841 
+ XL x3057     c142842 
+ XL x3061     c142843 
+ XL x3064     c142848 
+ XL x3065     c142855 
+ XL x3067     c142858 
+ XL x3068     c142862 
+ XL x3071     c142865 
+ XL x3073     c142868 
+ XL x3074     c142872 
+ XL x3075     c142882 
+ XL x3076     c142883 
+ XL x3077     c142890 
+ XL x3080     c142907 
+ XL x3083     c142914 
+ XL x3087     c142926 
+ XL x3088     c142934 
+ XL x3089     c142935 
+ XL x3090     c142947 
+ XL x3097     c142968 
+ XL x3098     c142976 
+ XL x3100     c142989 
+ XL x3102     c142998 
+ XL x3104     c143007 
+ XL x3107     c143012 
+ XL x3110     c143022 
+ XL x3111     c143044 
+ XL x3113     c143047 
+ XL x3115     c143052 
+ XL x3116     c143053 
+ XL x3117     c143055 
+ XL x3122     c143058 
+ XL x3126     c143067 
+ XL x3127     c143075 
+ XL x3130     c143080 
+ XL x3131     c143084 
+ XL x3134     c143085 
+ XL x3137     c143088 
+ XL x3139     c143101 
+ XL x3140     c143105 
+ XL x3143     c143115 
+ XL x3144     c143116 
+ XL x3145     c143126 
+ XL x3146     c143127 
+ XL x3147     c143132 
+ XL x3148     c143133 
+ XL x3151     c143138 
+ XL x3152     c143147 
+ XL x3154     c143148 
+ XL x3155     c143151 
+ XL x3159     c143155 
+ XL x3168     c143162 
+ XL x3169     c143169 
+ XL x3173     c143186 
+ XL x3174     c143204 
+ XL x3175     c143206 
+ XL x3179     c143220 
+ XL x3180     c143234 
+ XL x3181     c143237 
+ XL x3183     c143262 
+ XL x3187     c143272 
+ XL x3188     c143277 
+ XL x3189     c143280 
+ XL x3193     c143283 
+ XL x3196     c143286 
+ XL x3199     c143299 
+ XL x3200     c143300 
+ XL x3201     c143304 
+ XL x3203     c143320 
+ XL x3204     c143324 
+ XL x3205     c143338 
+ XL x3206     c143348 
+ XL x3207     c143360 
+ XL x3208     c143365 
+ XL x3209     c143371 
+ XL x3215     c143382 
+ XL x3217     c143400 
+ XL x3219     c143406 
+ UL x3
+ UL x4
+ UL x5
+ UL x6
+ UL x8
+ UL x9
+ UL x15
+ UL x16
+ UL x17
+ UL x18
+ UL x21
+ UL x22
+ UL x23
+ UL x24
+ UL x26
+ UL x27
+ UL x28
+ UL x29
+ UL x30
+ UL x31
+ UL x33
+ UL x34
+ UL x37
+ UL x38
+ UL x39
+ UL x40
+ UL x43
+ UL x44
+ UL x45
+ UL x46
+ UL x47
+ UL x48
+ UL x49
+ UL x50
+ UL x51
+ UL x52
+ UL x53
+ UL x54
+ UL x55
+ UL x56
+ UL x57
+ UL x59
+ UL x60
+ UL x61
+ UL x62
+ UL x63
+ UL x64
+ UL x65
+ UL x66
+ UL x67
+ UL x68
+ UL x69
+ UL x70
+ UL x71
+ UL x77
+ UL x78
+ UL x79
+ UL x80
+ UL x83
+ UL x85
+ UL x86
+ UL x87
+ UL x88
+ UL x89
+ UL x90
+ UL x91
+ UL x93
+ UL x94
+ UL x96
+ UL x98
+ UL x99
+ UL x100
+ UL x101
+ UL x102
+ UL x103
+ UL x104
+ UL x107
+ UL x108
+ UL x109
+ UL x110
+ UL x113
+ UL x117
+ UL x118
+ UL x120
+ UL x123
+ UL x124
+ UL x125
+ UL x126
+ UL x127
+ UL x128
+ UL x129
+ UL x130
+ UL x131
+ UL x133
+ UL x134
+ UL x135
+ UL x136
+ UL x139
+ UL x140
+ UL x141
+ UL x144
+ UL x145
+ UL x146
+ UL x148
+ UL x150
+ UL x151
+ UL x152
+ UL x154
+ UL x156
+ UL x157
+ UL x158
+ UL x159
+ UL x160
+ UL x169
+ UL x170
+ UL x171
+ UL x173
+ UL x174
+ UL x175
+ UL x176
+ UL x179
+ UL x181
+ UL x182
+ UL x183
+ UL x184
+ UL x187
+ UL x190
+ UL x191
+ UL x198
+ UL x199
+ UL x203
+ UL x204
+ UL x205
+ UL x206
+ UL x207
+ UL x210
+ UL x211
+ UL x212
+ UL x213
+ UL x214
+ UL x215
+ UL x216
+ UL x218
+ UL x219
+ UL x220
+ UL x221
+ UL x222
+ UL x223
+ UL x224
+ UL x225
+ UL x226
+ UL x227
+ UL x228
+ UL x229
+ UL x232
+ UL x234
+ UL x235
+ UL x236
+ UL x237
+ UL x239
+ UL x243
+ UL x245
+ UL x246
+ UL x247
+ UL x248
+ UL x249
+ UL x250
+ UL x251
+ UL x252
+ UL x253
+ UL x254
+ UL x256
+ UL x258
+ UL x259
+ UL x260
+ UL x261
+ UL x262
+ UL x263
+ UL x265
+ UL x267
+ UL x268
+ UL x269
+ UL x270
+ UL x271
+ UL x272
+ UL x273
+ UL x275
+ UL x276
+ UL x278
+ UL x279
+ UL x280
+ UL x283
+ UL x285
+ UL x286
+ UL x287
+ UL x288
+ UL x290
+ UL x291
+ UL x292
+ UL x293
+ UL x294
+ UL x295
+ UL x296
+ UL x303
+ UL x308
+ UL x311
+ UL x314
+ UL x323
+ UL x324
+ UL x325
+ UL x326
+ UL x328
+ UL x331
+ UL x334
+ UL x336
+ UL x338
+ UL x343
+ UL x346
+ UL x350
+ UL x351
+ UL x352
+ UL x353
+ UL x354
+ UL x355
+ UL x359
+ UL x363
+ UL x366
+ UL x369
+ UL x370
+ UL x375
+ UL x376
+ UL x377
+ UL x378
+ UL x379
+ UL x381
+ UL x382
+ UL x383
+ UL x384
+ UL x386
+ UL x387
+ UL x388
+ UL x389
+ UL x390
+ UL x391
+ UL x393
+ UL x394
+ UL x397
+ UL x398
+ UL x399
+ UL x400
+ UL x408
+ UL x409
+ UL x410
+ UL x411
+ UL x412
+ UL x413
+ UL x414
+ UL x415
+ UL x416
+ UL x417
+ UL x418
+ UL x419
+ UL x421
+ UL x422
+ UL x423
+ UL x425
+ UL x427
+ UL x428
+ UL x429
+ UL x430
+ UL x431
+ UL x432
+ UL x433
+ UL x434
+ UL x435
+ UL x437
+ UL x438
+ UL x439
+ UL x440
+ UL x449
+ UL x450
+ UL x451
+ UL x454
+ UL x456
+ UL x458
+ UL x460
+ UL x461
+ UL x462
+ UL x463
+ UL x464
+ UL x467
+ UL x469
+ UL x470
+ UL x471
+ UL x477
+ UL x478
+ UL x479
+ UL x489
+ UL x490
+ UL x491
+ UL x493
+ UL x494
+ UL x495
+ UL x496
+ UL x497
+ UL x498
+ UL x499
+ UL x500
+ UL x501
+ UL x502
+ UL x503
+ UL x504
+ UL x507
+ UL x509
+ UL x510
+ UL x511
+ UL x513
+ UL x517
+ UL x518
+ UL x519
+ UL x528
+ UL x529
+ UL x530
+ UL x531
+ UL x532
+ UL x533
+ UL x534
+ UL x535
+ UL x536
+ UL x537
+ UL x538
+ UL x539
+ UL x541
+ UL x542
+ UL x543
+ UL x544
+ UL x545
+ UL x546
+ UL x547
+ UL x548
+ UL x549
+ UL x550
+ UL x551
+ UL x552
+ UL x553
+ UL x554
+ UL x555
+ UL x557
+ UL x558
+ UL x559
+ UL x560
+ UL x563
+ UL x564
+ UL x565
+ UL x566
+ UL x567
+ UL x569
+ UL x572
+ UL x575
+ UL x576
+ UL x577
+ UL x578
+ UL x579
+ UL x580
+ UL x581
+ UL x582
+ UL x583
+ UL x584
+ UL x586
+ UL x587
+ UL x588
+ UL x589
+ UL x590
+ UL x591
+ UL x592
+ UL x593
+ UL x594
+ UL x595
+ UL x596
+ UL x597
+ UL x598
+ UL x599
+ UL x600
+ UL x609
+ UL x610
+ UL x611
+ UL x616
+ UL x617
+ UL x618
+ UL x622
+ UL x623
+ UL x624
+ UL x627
+ UL x629
+ UL x630
+ UL x631
+ UL x633
+ UL x637
+ UL x638
+ UL x639
+ UL x649
+ UL x650
+ UL x651
+ UL x653
+ UL x654
+ UL x655
+ UL x656
+ UL x657
+ UL x662
+ UL x664
+ UL x667
+ UL x669
+ UL x670
+ UL x671
+ UL x678
+ UL x688
+ UL x689
+ UL x690
+ UL x691
+ UL x692
+ UL x693
+ UL x694
+ UL x695
+ UL x696
+ UL x697
+ UL x698
+ UL x699
+ UL x701
+ UL x702
+ UL x703
+ UL x709
+ UL x710
+ UL x711
+ UL x712
+ UL x713
+ UL x714
+ UL x716
+ UL x717
+ UL x718
+ UL x719
+ UL x728
+ UL x729
+ UL x730
+ UL x731
+ UL x732
+ UL x733
+ UL x734
+ UL x735
+ UL x736
+ UL x737
+ UL x738
+ UL x739
+ UL x741
+ UL x742
+ UL x745
+ UL x747
+ UL x749
+ UL x750
+ UL x751
+ UL x752
+ UL x753
+ UL x754
+ UL x756
+ UL x757
+ UL x758
+ UL x759
+ UL x760
+ UL x768
+ UL x769
+ UL x770
+ UL x771
+ UL x772
+ UL x773
+ UL x774
+ UL x775
+ UL x776
+ UL x777
+ UL x778
+ UL x779
+ UL x782
+ UL x783
+ UL x785
+ UL x787
+ UL x788
+ UL x789
+ UL x790
+ UL x791
+ UL x792
+ UL x793
+ UL x794
+ UL x795
+ UL x796
+ UL x797
+ UL x798
+ UL x799
+ UL x800
+ UL x808
+ UL x809
+ UL x810
+ UL x811
+ UL x812
+ UL x813
+ UL x814
+ UL x815
+ UL x816
+ UL x817
+ UL x818
+ UL x819
+ UL x821
+ UL x822
+ UL x823
+ UL x825
+ UL x829
+ UL x830
+ UL x831
+ UL x832
+ UL x833
+ UL x834
+ UL x835
+ UL x837
+ UL x839
+ UL x843
+ UL x844
+ UL x845
+ UL x846
+ UL x847
+ UL x848
+ UL x849
+ UL x850
+ UL x851
+ UL x853
+ UL x854
+ UL x856
+ UL x857
+ UL x860
+ UL x861
+ UL x862
+ UL x863
+ UL x864
+ UL x865
+ UL x867
+ UL x868
+ UL x869
+ UL x872
+ UL x873
+ UL x874
+ UL x878
+ UL x880
+ UL x883
+ UL x884
+ UL x885
+ UL x886
+ UL x887
+ UL x889
+ UL x890
+ UL x891
+ UL x892
+ UL x893
+ UL x894
+ UL x895
+ UL x896
+ UL x897
+ UL x899
+ UL x900
+ UL x901
+ UL x902
+ UL x903
+ UL x904
+ UL x907
+ UL x908
+ UL x909
+ UL x910
+ UL x913
+ UL x917
+ UL x918
+ UL x919
+ UL x920
+ UL x923
+ UL x924
+ UL x925
+ UL x926
+ UL x927
+ UL x929
+ UL x935
+ UL x936
+ UL x937
+ UL x938
+ UL x940
+ UL x941
+ UL x942
+ UL x943
+ UL x947
+ UL x949
+ UL x953
+ UL x957
+ UL x958
+ UL x960
+ UL x961
+ UL x963
+ UL x964
+ UL x965
+ UL x966
+ UL x967
+ UL x969
+ UL x976
+ UL x978
+ UL x980
+ UL x981
+ UL x983
+ UL x984
+ UL x986
+ UL x987
+ UL x988
+ UL x989
+ UL x990
+ UL x991
+ UL x992
+ UL x993
+ UL x994
+ UL x995
+ UL x996
+ UL x997
+ UL x998
+ UL x999
+ UL x1000
+ UL x1001
+ UL x1002
+ UL x1003
+ UL x1004
+ UL x1005
+ UL x1006
+ UL x1007
+ UL x1009
+ UL x1015
+ UL x1016
+ UL x1017
+ UL x1018
+ UL x1020
+ UL x1021
+ UL x1023
+ UL x1024
+ UL x1026
+ UL x1027
+ UL x1028
+ UL x1029
+ UL x1031
+ UL x1034
+ UL x1035
+ UL x1036
+ UL x1037
+ UL x1038
+ UL x1039
+ UL x1040
+ UL x1041
+ UL x1043
+ UL x1044
+ UL x1045
+ UL x1046
+ UL x1047
+ UL x1048
+ UL x1050
+ UL x1051
+ UL x1054
+ UL x1056
+ UL x1058
+ UL x1060
+ UL x1065
+ UL x1071
+ UL x1073
+ UL x1074
+ UL x1076
+ UL x1078
+ UL x1079
+ UL x1080
+ UL x1081
+ UL x1083
+ UL x1084
+ UL x1085
+ UL x1086
+ UL x1087
+ UL x1088
+ UL x1090
+ UL x1091
+ UL x1092
+ UL x1093
+ UL x1094
+ UL x1095
+ UL x1096
+ UL x1099
+ UL x1103
+ UL x1105
+ UL x1109
+ UL x1111
+ UL x1112
+ UL x1113
+ UL x1114
+ UL x1115
+ UL x1116
+ UL x1119
+ UL x1120
+ UL x1121
+ UL x1122
+ UL x1123
+ UL x1124
+ UL x1125
+ UL x1126
+ UL x1127
+ UL x1129
+ UL x1135
+ UL x1136
+ UL x1138
+ UL x1140
+ UL x1141
+ UL x1143
+ UL x1144
+ UL x1145
+ UL x1146
+ UL x1147
+ UL x1148
+ UL x1149
+ UL x1151
+ UL x1152
+ UL x1153
+ UL x1154
+ UL x1155
+ UL x1156
+ UL x1157
+ UL x1158
+ UL x1159
+ UL x1160
+ UL x1163
+ UL x1164
+ UL x1165
+ UL x1167
+ UL x1168
+ UL x1170
+ UL x1171
+ UL x1172
+ UL x1173
+ UL x1174
+ UL x1175
+ UL x1176
+ UL x1181
+ UL x1187
+ UL x1189
+ UL x1190
+ UL x1191
+ UL x1193
+ UL x1194
+ UL x1195
+ UL x1196
+ UL x1199
+ UL x1200
+ UL x1201
+ UL x1202
+ UL x1203
+ UL x1204
+ UL x1205
+ UL x1206
+ UL x1207
+ UL x1208
+ UL x1209
+ UL x1210
+ UL x1211
+ UL x1212
+ UL x1214
+ UL x1215
+ UL x1216
+ UL x1217
+ UL x1218
+ UL x1220
+ UL x1221
+ UL x1223
+ UL x1224
+ UL x1225
+ UL x1226
+ UL x1227
+ UL x1228
+ UL x1229
+ UL x1232
+ UL x1233
+ UL x1237
+ UL x1238
+ UL x1240
+ UL x1241
+ UL x1242
+ UL x1243
+ UL x1244
+ UL x1245
+ UL x1246
+ UL x1247
+ UL x1248
+ UL x1249
+ UL x1250
+ UL x1254
+ UL x1255
+ UL x1256
+ UL x1257
+ UL x1258
+ UL x1259
+ UL x1261
+ UL x1262
+ UL x1263
+ UL x1264
+ UL x1266
+ UL x1267
+ UL x1268
+ UL x1269
+ UL x1271
+ UL x1272
+ UL x1274
+ UL x1275
+ UL x1276
+ UL x1277
+ UL x1278
+ UL x1279
+ UL x1280
+ UL x1281
+ UL x1282
+ UL x1283
+ UL x1284
+ UL x1285
+ UL x1286
+ UL x1287
+ UL x1292
+ UL x1293
+ UL x1295
+ UL x1296
+ UL x1301
+ UL x1302
+ UL x1303
+ UL x1306
+ UL x1308
+ UL x1309
+ UL x1310
+ UL x1311
+ UL x1316
+ UL x1319
+ UL x1321
+ UL x1323
+ UL x1324
+ UL x1326
+ UL x1327
+ UL x1328
+ UL x1329
+ UL x1331
+ UL x1334
+ UL x1336
+ UL x1359
+ UL x1360
+ UL x1361
+ UL x1362
+ UL x1363
+ UL x1364
+ UL x1365
+ UL x1366
+ UL x1367
+ UL x1368
+ UL x1369
+ UL x1370
+ UL x1371
+ UL x1373
+ UL x1375
+ UL x1376
+ UL x1377
+ UL x1378
+ UL x1379
+ UL x1380
+ UL x1382
+ UL x1383
+ UL x1384
+ UL x1386
+ UL x1387
+ UL x1388
+ UL x1389
+ UL x1390
+ UL x1393
+ UL x1394
+ UL x1397
+ UL x1398
+ UL x1399
+ UL x1400
+ UL x1403
+ UL x1404
+ UL x1405
+ UL x1406
+ UL x1407
+ UL x1408
+ UL x1409
+ UL x1410
+ UL x1411
+ UL x1412
+ UL x1413
+ UL x1414
+ UL x1415
+ UL x1416
+ UL x1418
+ UL x1419
+ UL x1420
+ UL x1421
+ UL x1422
+ UL x1423
+ UL x1424
+ UL x1425
+ UL x1426
+ UL x1427
+ UL x1428
+ UL x1429
+ UL x1432
+ UL x1433
+ UL x1437
+ UL x1438
+ UL x1440
+ UL x1441
+ UL x1442
+ UL x1448
+ UL x1449
+ UL x1450
+ UL x1451
+ UL x1453
+ UL x1454
+ UL x1455
+ UL x1456
+ UL x1469
+ UL x1470
+ UL x1471
+ UL x1473
+ UL x1474
+ UL x1475
+ UL x1476
+ UL x1478
+ UL x1479
+ UL x1480
+ UL x1481
+ UL x1482
+ UL x1483
+ UL x1484
+ UL x1485
+ UL x1486
+ UL x1487
+ UL x1488
+ UL x1489
+ UL x1490
+ UL x1491
+ UL x1492
+ UL x1493
+ UL x1494
+ UL x1496
+ UL x1499
+ UL x1503
+ UL x1505
+ UL x1507
+ UL x1509
+ UL x1511
+ UL x1512
+ UL x1514
+ UL x1515
+ UL x1516
+ UL x1519
+ UL x1520
+ UL x1521
+ UL x1522
+ UL x1523
+ UL x1524
+ UL x1525
+ UL x1526
+ UL x1527
+ UL x1528
+ UL x1529
+ UL x1531
+ UL x1532
+ UL x1534
+ UL x1536
+ UL x1538
+ UL x1540
+ UL x1541
+ UL x1544
+ UL x1546
+ UL x1547
+ UL x1548
+ UL x1551
+ UL x1552
+ UL x1557
+ UL x1558
+ UL x1561
+ UL x1563
+ UL x1564
+ UL x1565
+ UL x1566
+ UL x1567
+ UL x1569
+ UL x1575
+ UL x1576
+ UL x1577
+ UL x1578
+ UL x1579
+ UL x1580
+ UL x1581
+ UL x1582
+ UL x1583
+ UL x1584
+ UL x1586
+ UL x1587
+ UL x1588
+ UL x1589
+ UL x1591
+ UL x1593
+ UL x1594
+ UL x1595
+ UL x1596
+ UL x1597
+ UL x1598
+ UL x1599
+ UL x1600
+ UL x1601
+ UL x1602
+ UL x1603
+ UL x1604
+ UL x1605
+ UL x1606
+ UL x1607
+ UL x1608
+ UL x1610
+ UL x1611
+ UL x1612
+ UL x1613
+ UL x1614
+ UL x1615
+ UL x1616
+ UL x1619
+ UL x1620
+ UL x1621
+ UL x1622
+ UL x1623
+ UL x1625
+ UL x1626
+ UL x1627
+ UL x1628
+ UL x1629
+ UL x1632
+ UL x1634
+ UL x1635
+ UL x1636
+ UL x1637
+ UL x1638
+ UL x1639
+ UL x1641
+ UL x1642
+ UL x1643
+ UL x1644
+ UL x1645
+ UL x1646
+ UL x1647
+ UL x1648
+ UL x1649
+ UL x1650
+ UL x1651
+ UL x1653
+ UL x1654
+ UL x1656
+ UL x1658
+ UL x1660
+ UL x1661
+ UL x1665
+ UL x1666
+ UL x1668
+ UL x1670
+ UL x1672
+ UL x1673
+ UL x1675
+ UL x1676
+ UL x1677
+ UL x1679
+ UL x1680
+ UL x1683
+ UL x1684
+ UL x1685
+ UL x1686
+ UL x1687
+ UL x1688
+ UL x1689
+ UL x1690
+ UL x1691
+ UL x1692
+ UL x1693
+ UL x1694
+ UL x1696
+ UL x1699
+ UL x1702
+ UL x1703
+ UL x1705
+ UL x1707
+ UL x1708
+ UL x1709
+ UL x1710
+ UL x1711
+ UL x1712
+ UL x1713
+ UL x1714
+ UL x1715
+ UL x1716
+ UL x1718
+ UL x1719
+ UL x1720
+ UL x1721
+ UL x1722
+ UL x1723
+ UL x1724
+ UL x1725
+ UL x1726
+ UL x1727
+ UL x1728
+ UL x1736
+ UL x1740
+ UL x1741
+ UL x1744
+ UL x1747
+ UL x1748
+ UL x1749
+ UL x1750
+ UL x1752
+ UL x1753
+ UL x1754
+ UL x1755
+ UL x1756
+ UL x1757
+ UL x1758
+ UL x1760
+ UL x1761
+ UL x1762
+ UL x1763
+ UL x1764
+ UL x1765
+ UL x1766
+ UL x1767
+ UL x1768
+ UL x1769
+ UL x1770
+ UL x1771
+ UL x1772
+ UL x1773
+ UL x1774
+ UL x1776
+ UL x1779
+ UL x1783
+ UL x1785
+ UL x1787
+ UL x1789
+ UL x1790
+ UL x1791
+ UL x1792
+ UL x1794
+ UL x1795
+ UL x1796
+ UL x1798
+ UL x1799
+ UL x1800
+ UL x1801
+ UL x1802
+ UL x1803
+ UL x1804
+ UL x1805
+ UL x1806
+ UL x1807
+ UL x1808
+ UL x1809
+ UL x1810
+ UL x1811
+ UL x1812
+ UL x1813
+ UL x1814
+ UL x1816
+ UL x1818
+ UL x1820
+ UL x1821
+ UL x1825
+ UL x1826
+ UL x1828
+ UL x1830
+ UL x1831
+ UL x1832
+ UL x1833
+ UL x1835
+ UL x1836
+ UL x1837
+ UL x1838
+ UL x1839
+ UL x1840
+ UL x1843
+ UL x1844
+ UL x1845
+ UL x1846
+ UL x1849
+ UL x1856
+ UL x1857
+ UL x1863
+ UL x1864
+ UL x1867
+ UL x1869
+ UL x1870
+ UL x1871
+ UL x1878
+ UL x1881
+ UL x1882
+ UL x1883
+ UL x1884
+ UL x1885
+ UL x1888
+ UL x1890
+ UL x1891
+ UL x1893
+ UL x1894
+ UL x1896
+ UL x1901
+ UL x1905
+ UL x1906
+ UL x1911
+ UL x1912
+ UL x1915
+ UL x1916
+ UL x1917
+ UL x1918
+ UL x1919
+ UL x1921
+ UL x1922
+ UL x1923
+ UL x1924
+ UL x1925
+ UL x1926
+ UL x1927
+ UL x1928
+ UL x1930
+ UL x1933
+ UL x1934
+ UL x1936
+ UL x1937
+ UL x1940
+ UL x1941
+ UL x1943
+ UL x1944
+ UL x1945
+ UL x1946
+ UL x1947
+ UL x1949
+ UL x1951
+ UL x1952
+ UL x1954
+ UL x1955
+ UL x1956
+ UL x1957
+ UL x1959
+ UL x1963
+ UL x1965
+ UL x1966
+ UL x1967
+ UL x1969
+ UL x1970
+ UL x1971
+ UL x1972
+ UL x1973
+ UL x1974
+ UL x1975
+ UL x1976
+ UL x1977
+ UL x1979
+ UL x1980
+ UL x1981
+ UL x1982
+ UL x1983
+ UL x1984
+ UL x1986
+ UL x1987
+ UL x1988
+ UL x1989
+ UL x1990
+ UL x1995
+ UL x2000
+ UL x2001
+ UL x2004
+ UL x2005
+ UL x2006
+ UL x2008
+ UL x2009
+ UL x2010
+ UL x2011
+ UL x2012
+ UL x2013
+ UL x2014
+ UL x2016
+ UL x2021
+ UL x2027
+ UL x2029
+ UL x2030
+ UL x2031
+ UL x2033
+ UL x2034
+ UL x2035
+ UL x2036
+ UL x2039
+ UL x2040
+ UL x2041
+ UL x2042
+ UL x2043
+ UL x2044
+ UL x2045
+ UL x2046
+ UL x2047
+ UL x2048
+ UL x2049
+ UL x2050
+ UL x2051
+ UL x2052
+ UL x2053
+ UL x2054
+ UL x2056
+ UL x2058
+ UL x2065
+ UL x2071
+ UL x2072
+ UL x2074
+ UL x2075
+ UL x2076
+ UL x2079
+ UL x2080
+ UL x2081
+ UL x2082
+ UL x2083
+ UL x2084
+ UL x2085
+ UL x2086
+ UL x2087
+ UL x2088
+ UL x2090
+ UL x2091
+ UL x2092
+ UL x2093
+ UL x2094
+ UL x2095
+ UL x2096
+ UL x2098
+ UL x2099
+ UL x2103
+ UL x2107
+ UL x2111
+ UL x2113
+ UL x2119
+ UL x2121
+ UL x2122
+ UL x2123
+ UL x2124
+ UL x2127
+ UL x2128
+ UL x2131
+ UL x2132
+ UL x2134
+ UL x2136
+ UL x2137
+ UL x2138
+ UL x2143
+ UL x2150
+ UL x2153
+ UL x2156
+ UL x2158
+ UL x2159
+ UL x2160
+ UL x2162
+ UL x2163
+ UL x2164
+ UL x2165
+ UL x2166
+ UL x2167
+ UL x2168
+ UL x2174
+ UL x2176
+ UL x2177
+ UL x2178
+ UL x2180
+ UL x2183
+ UL x2184
+ UL x2186
+ UL x2187
+ UL x2188
+ UL x2189
+ UL x2190
+ UL x2191
+ UL x2192
+ UL x2193
+ UL x2194
+ UL x2195
+ UL x2196
+ UL x2197
+ UL x2199
+ UL x2201
+ UL x2202
+ UL x2203
+ UL x2204
+ UL x2205
+ UL x2206
+ UL x2207
+ UL x2208
+ UL x2210
+ UL x2211
+ UL x2212
+ UL x2213
+ UL x2214
+ UL x2215
+ UL x2216
+ UL x2217
+ UL x2223
+ UL x2224
+ UL x2225
+ UL x2226
+ UL x2227
+ UL x2231
+ UL x2232
+ UL x2233
+ UL x2234
+ UL x2235
+ UL x2236
+ UL x2239
+ UL x2241
+ UL x2242
+ UL x2243
+ UL x2244
+ UL x2245
+ UL x2246
+ UL x2247
+ UL x2248
+ UL x2250
+ UL x2251
+ UL x2252
+ UL x2253
+ UL x2254
+ UL x2255
+ UL x2256
+ UL x2257
+ UL x2260
+ UL x2265
+ UL x2267
+ UL x2270
+ UL x2271
+ UL x2272
+ UL x2273
+ UL x2274
+ UL x2275
+ UL x2276
+ UL x2279
+ UL x2281
+ UL x2283
+ UL x2284
+ UL x2285
+ UL x2286
+ UL x2287
+ UL x2288
+ UL x2289
+ UL x2290
+ UL x2291
+ UL x2292
+ UL x2293
+ UL x2294
+ UL x2296
+ UL x2300
+ UL x2305
+ UL x2306
+ UL x2308
+ UL x2310
+ UL x2311
+ UL x2312
+ UL x2313
+ UL x2314
+ UL x2315
+ UL x2316
+ UL x2317
+ UL x2319
+ UL x2320
+ UL x2321
+ UL x2323
+ UL x2324
+ UL x2325
+ UL x2326
+ UL x2327
+ UL x2328
+ UL x2330
+ UL x2331
+ UL x2332
+ UL x2333
+ UL x2334
+ UL x2335
+ UL x2336
+ UL x2337
+ UL x2340
+ UL x2341
+ UL x2343
+ UL x2344
+ UL x2345
+ UL x2346
+ UL x2347
+ UL x2349
+ UL x2351
+ UL x2352
+ UL x2354
+ UL x2355
+ UL x2356
+ UL x2357
+ UL x2359
+ UL x2363
+ UL x2364
+ UL x2365
+ UL x2366
+ UL x2367
+ UL x2368
+ UL x2370
+ UL x2371
+ UL x2373
+ UL x2374
+ UL x2375
+ UL x2376
+ UL x2377
+ UL x2380
+ UL x2381
+ UL x2383
+ UL x2385
+ UL x2386
+ UL x2387
+ UL x2389
+ UL x2391
+ UL x2392
+ UL x2394
+ UL x2397
+ UL x2399
+ UL x2401
+ UL x2402
+ UL x2403
+ UL x2404
+ UL x2405
+ UL x2406
+ UL x2407
+ UL x2408
+ UL x2409
+ UL x2410
+ UL x2411
+ UL x2412
+ UL x2413
+ UL x2414
+ UL x2415
+ UL x2416
+ UL x2417
+ UL x2422
+ UL x2423
+ UL x2427
+ UL x2429
+ UL x2430
+ UL x2431
+ UL x2434
+ UL x2435
+ UL x2438
+ UL x2439
+ UL x2440
+ UL x2441
+ UL x2455
+ UL x2457
+ UL x2458
+ UL x2459
+ UL x2461
+ UL x2462
+ UL x2463
+ UL x2468
+ UL x2472
+ UL x2476
+ UL x2487
+ UL x2491
+ UL x2493
+ UL x2495
+ UL x2496
+ UL x2497
+ UL x2499
+ UL x2501
+ UL x2504
+ UL x2506
+ UL x2514
+ UL x2515
+ UL x2516
+ UL x2522
+ UL x2523
+ UL x2524
+ UL x2525
+ UL x2526
+ UL x2527
+ UL x2528
+ UL x2529
+ UL x2530
+ UL x2535
+ UL x2536
+ UL x2541
+ UL x2542
+ UL x2543
+ UL x2544
+ UL x2545
+ UL x2546
+ UL x2547
+ UL x2550
+ UL x2552
+ UL x2553
+ UL x2558
+ UL x2559
+ UL x2560
+ UL x2561
+ UL x2562
+ UL x2563
+ UL x2564
+ UL x2565
+ UL x2566
+ UL x2567
+ UL x2569
+ UL x2571
+ UL x2572
+ UL x2575
+ UL x2577
+ UL x2578
+ UL x2579
+ UL x2580
+ UL x2581
+ UL x2582
+ UL x2583
+ UL x2585
+ UL x2587
+ UL x2588
+ UL x2589
+ UL x2590
+ UL x2594
+ UL x2595
+ UL x2596
+ UL x2597
+ UL x2598
+ UL x2599
+ UL x2600
+ UL x2601
+ UL x2603
+ UL x2607
+ UL x2610
+ UL x2611
+ UL x2615
+ UL x2616
+ UL x2617
+ UL x2618
+ UL x2620
+ UL x2621
+ UL x2623
+ UL x2624
+ UL x2627
+ UL x2628
+ UL x2629
+ UL x2630
+ UL x2631
+ UL x2632
+ UL x2633
+ UL x2634
+ UL x2635
+ UL x2636
+ UL x2637
+ UL x2640
+ UL x2641
+ UL x2648
+ UL x2649
+ UL x2650
+ UL x2651
+ UL x2652
+ UL x2653
+ UL x2655
+ UL x2656
+ UL x2657
+ UL x2658
+ UL x2660
+ UL x2661
+ UL x2662
+ UL x2663
+ UL x2664
+ UL x2665
+ UL x2666
+ UL x2667
+ UL x2668
+ UL x2671
+ UL x2674
+ UL x2680
+ UL x2681
+ UL x2682
+ UL x2683
+ UL x2684
+ UL x2685
+ UL x2686
+ UL x2687
+ UL x2688
+ UL x2690
+ UL x2691
+ UL x2693
+ UL x2699
+ UL x2700
+ UL x2701
+ UL x2702
+ UL x2703
+ UL x2704
+ UL x2706
+ UL x2707
+ UL x2708
+ UL x2710
+ UL x2711
+ UL x2712
+ UL x2713
+ UL x2715
+ UL x2716
+ UL x2717
+ UL x2718
+ UL x2719
+ UL x2721
+ UL x2722
+ UL x2723
+ UL x2724
+ UL x2725
+ UL x2726
+ UL x2728
+ UL x2731
+ UL x2735
+ UL x2736
+ UL x2738
+ UL x2739
+ UL x2740
+ UL x2741
+ UL x2744
+ UL x2746
+ UL x2747
+ UL x2749
+ UL x2750
+ UL x2751
+ UL x2754
+ UL x2760
+ UL x2761
+ UL x2763
+ UL x2765
+ UL x2766
+ UL x2768
+ UL x2769
+ UL x2771
+ UL x2772
+ UL x2773
+ UL x2774
+ UL x2776
+ UL x2777
+ UL x2780
+ UL x2781
+ UL x2782
+ UL x2783
+ UL x2784
+ UL x2785
+ UL x2789
+ UL x2790
+ UL x2791
+ UL x2792
+ UL x2794
+ UL x2795
+ UL x2797
+ UL x2798
+ UL x2800
+ UL x2801
+ UL x2803
+ UL x2805
+ UL x2806
+ UL x2808
+ UL x2809
+ UL x2810
+ UL x2811
+ UL x2812
+ UL x2814
+ UL x2818
+ UL x2819
+ UL x2826
+ UL x2828
+ UL x2829
+ UL x2831
+ UL x2835
+ UL x2836
+ UL x2839
+ UL x2841
+ UL x2842
+ UL x2845
+ UL x2847
+ UL x2849
+ UL x2850
+ UL x2852
+ UL x2853
+ UL x2855
+ UL x2856
+ UL x2857
+ UL x2858
+ UL x2860
+ UL x2862
+ UL x2863
+ UL x2864
+ UL x2865
+ UL x2866
+ UL x2867
+ UL x2868
+ UL x2870
+ UL x2871
+ UL x2872
+ UL x2873
+ UL x2874
+ UL x2876
+ UL x2878
+ UL x2879
+ UL x2881
+ UL x2882
+ UL x2883
+ UL x2884
+ UL x2886
+ UL x2889
+ UL x2890
+ UL x2891
+ UL x2892
+ UL x2895
+ UL x2896
+ UL x2900
+ UL x2901
+ UL x2904
+ UL x2905
+ UL x2911
+ UL x2914
+ UL x2915
+ UL x2916
+ UL x2918
+ UL x2919
+ UL x2920
+ UL x2921
+ UL x2922
+ UL x2923
+ UL x2924
+ UL x2925
+ UL x2926
+ UL x2927
+ UL x2928
+ UL x2929
+ UL x2930
+ UL x2931
+ UL x2932
+ UL x2933
+ UL x2934
+ UL x2935
+ UL x2936
+ UL x2937
+ UL x2938
+ UL x2939
+ UL x2940
+ UL x2941
+ UL x2942
+ UL x2943
+ UL x2944
+ UL x2952
+ UL x2957
+ UL x2959
+ UL x2962
+ UL x2965
+ UL x2966
+ UL x2974
+ UL x2978
+ UL x2980
+ UL x2982
+ UL x2984
+ UL x2993
+ UL x2994
+ UL x2996
+ UL x2997
+ UL x2998
+ UL x3001
+ UL x3002
+ UL x3003
+ UL x3004
+ UL x3006
+ UL x3009
+ UL x3019
+ UL x3020
+ UL x3023
+ UL x3024
+ UL x3025
+ UL x3026
+ UL x3028
+ UL x3029
+ UL x3030
+ UL x3043
+ UL x3053
+ UL x3058
+ UL x3059
+ UL x3060
+ UL x3062
+ UL x3063
+ UL x3066
+ UL x3069
+ UL x3070
+ UL x3072
+ UL x3078
+ UL x3079
+ UL x3081
+ UL x3082
+ UL x3084
+ UL x3085
+ UL x3086
+ UL x3091
+ UL x3092
+ UL x3093
+ UL x3094
+ UL x3095
+ UL x3096
+ UL x3099
+ UL x3101
+ UL x3103
+ UL x3108
+ UL x3109
+ UL x3112
+ UL x3114
+ UL x3118
+ UL x3119
+ UL x3120
+ UL x3121
+ UL x3123
+ UL x3124
+ UL x3125
+ UL x3128
+ UL x3129
+ UL x3132
+ UL x3133
+ UL x3135
+ UL x3136
+ UL x3138
+ UL x3141
+ UL x3142
+ UL x3149
+ UL x3150
+ UL x3153
+ UL x3156
+ UL x3157
+ UL x3158
+ UL x3160
+ UL x3161
+ UL x3162
+ UL x3163
+ UL x3164
+ UL x3165
+ UL x3166
+ UL x3170
+ UL x3171
+ UL x3172
+ UL x3176
+ UL x3177
+ UL x3178
+ UL x3182
+ UL x3184
+ UL x3185
+ UL x3186
+ UL x3190
+ UL x3191
+ UL x3192
+ UL x3194
+ UL x3195
+ UL x3197
+ UL x3198
+ UL x3202
+ UL x3210
+ UL x3211
+ UL x3212
+ UL x3213
+ UL x3214
+ UL x3216
+ UL x3218
+ UL x3220
+ENDATA

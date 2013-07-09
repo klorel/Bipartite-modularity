@@ -1,0 +1,12 @@
+# AMPL dat file automatically created from 0xb7e0e420
+# number of vertices
+param n := 4;
+# number of edges/arcs
+#param m := 78;
+# graph is undirected
+# edge : cost indicator
+param : E : c := 
+1 2 1
+1 3 1
+2 3 1
+3 4 1;

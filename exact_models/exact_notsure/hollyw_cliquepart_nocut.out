@@ -1,0 +1,24 @@
+CPLEX 12.4.0.0: timing=1
+varsel=4
+mipdisplay=4
+cutpass=-1
+Probing time =    0.06 sec.
+Found feasible solution after 2.06 sec.  Objective = 0.0000
+Probing time =    0.10 sec.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time =   17.28 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0.0000                     11     --- 
+      0     0        0.4201  3245        0.0000        0.4201       11     --- 
+Heuristic still looking.
+Heuristic still looking.
+Heuristic still looking.
+      0     2        0.4201  3245        0.0000        0.4201       11     --- 
+Elapsed real time = 206.90 sec. (tree size =  0.01 MB)
+      1     3        0.4023  3232        0.0000        0.4201    33122     --- 
+      2     4        0.4036  3238        0.0000        0.4201    57522     --- 

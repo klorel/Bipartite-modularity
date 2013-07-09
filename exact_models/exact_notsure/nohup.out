@@ -1,0 +1,56 @@
+CPLEX 12.4.0.0: timing=1
+varsel=4
+mipdisplay=4
+MIP Presolve eliminated 1962 rows and 1866 columns.
+MIP Presolve modified 7621 coefficients.
+Reduced MIP has 4060 rows, 3354 columns, and 37273 nonzeros.
+Reduced MIP has 368 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing fixed 1 vars, tightened 561 bounds.
+Probing time =    0.20 sec.
+MIP Presolve eliminated 2 rows and 2 columns.
+MIP Presolve modified 12 coefficients.
+Reduced MIP has 4058 rows, 3352 columns, and 37183 nonzeros.
+Reduced MIP has 367 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.02 sec.
+Clique table members: 1864.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time =    0.17 sec.
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.9094    61                      0.9094     1415         
+*     0+    0                            0.0172        0.9094     1415     --- 
+      0     0        0.9003    61        0.0172     Fract: 30     1433     --- 
+      0     0        0.8910    61        0.0172     Fract: 23     1449     --- 
+*     0+    0                            0.0972        0.8910     1449  816.62%
+      0     2        0.8910    61        0.0972        0.8910     1449  816.62%
+Elapsed real time =   1.40 sec. (tree size =  0.01 MB)
+*     4+    4                            0.3079        0.8673     3142  181.68%
+      4     6        0.7869    58        0.3079        0.8673     3142  181.68%
+     11    13        0.7527    59        0.3079        0.8460     7195  174.77%
+     18    20        0.6880    58        0.3079        0.8460    12272  174.77%
+     29    31        0.6099    55        0.3079        0.8460    17320  174.77%
+     33    35        0.5713    53        0.3079        0.8460    18624  174.77%
+     76    72        0.4952    69        0.3079        0.8460    23597  174.77%
+    122   102        0.6874    58        0.3079        0.8460    28913  174.77%
+    154   128        0.4673    70        0.3079        0.7858    34537  155.22%
+    192   152        0.4085    51        0.3079        0.7858    39090  155.22%
+*   323+  271                            0.3184        0.7819    49303  145.58%
+*   323+  271                            0.3216        0.7819    49303  143.17%
+    384   324        0.7534   128        0.3216        0.7819    53296  143.17%
+Elapsed real time =   8.18 sec. (tree size =  6.41 MB)
+    581   497        0.4444    44        0.3216        0.7594    69245  136.17%
+    844   738        0.5331   166        0.3216        0.7534    86984  134.29%
+   1133   997        0.5491    98        0.3216        0.7114   104957  121.23%
+   1216  1069        0.7464    59        0.3216        0.6973   112379  116.87%
+   1232  1078        0.6609    57        0.3216        0.6973   124628  116.87%
+   1280  1037        0.6860   112        0.3216        0.6973   141342  116.87%
+   1401   935        0.5838    89        0.3216        0.6973   156111  116.87%
+   1647  1041        0.5108   151        0.3216        0.6973   175111  116.87%
+   1852  1129        0.5942   165        0.3216        0.6973   191668  116.87%
+error running cplex:
+	termination code 15
+<BREAK>
