@@ -22,9 +22,11 @@ param inv_m := 1.0/m;
 param c{RB} default 0;
 param d{u in V} := card({v in V: (u,v) in E or (v,u) in E});
 param w{(i,j) in V2  } := 
-( 
-	(if( (i,j) in E) then c[i,j] else 0 )-d[i]*d[j]*inv_m
-)*inv_m;
+	# (if( (i,j) in E) then c[i,j] else 0 )-d[i]*d[j]*inv_m
+	if( (i,j) in E) then 
+		( c[i,j] -d[i]*d[j]*inv_m)*inv_m
+	else 
+		0;
 # edge inclusions
 param I{E};
 
@@ -32,8 +34,8 @@ set V3 :=  {(i,j,k) in V cross V cross V : i<j and j<k};
 
 # data divorces.dat;
 # data SocialWorkJ.dat;
-data wafa.dat;
-# data SupremeCourtnot.dat;
+# data wafa.dat;
+data SupremeCourtnot.dat;
 # data SupremeCourtyes.dat;
 
 set RB2 := { (i,j,ii,jj) in RB cross RB : jj!=j or ii!=i};
