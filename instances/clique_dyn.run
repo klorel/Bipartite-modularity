@@ -22,9 +22,12 @@ param inv_m := 1.0/m;
 param c{RB} default 0;
 param d{u in V} := card({v in V: (u,v) in E or (v,u) in E});
 param w{(i,j) in V2  } := 
-( 
-	(if( (i,j) in E) then c[i,j] else 0 )-d[i]*d[j]*inv_m
-)*inv_m;
+	# ((if( (i,j) in E) then c[i,j] else 0 )-d[i]*d[j]*inv_m)*inv_m
+	if( (i,j) in RB) then 
+		( c[i,j] -d[i]*d[j]*inv_m)*inv_m
+	else 
+		0
+;
 # edge inclusions
 param I{E};
 
@@ -56,7 +59,7 @@ param n1;
 param n2;
 param n3;
 
-maximize modularity: sum{(i,j) in RB} w[i,j]*x[i,j];
+maximize modularity: sum{(i,j) in V2} w[i,j]*x[i,j];
 
 subject to ctr1 {(i,j,k) in Set1}: cut1[i,j,k]<=1; 
 subject to ctr2 {(i,j,k) in Set2}: cut2[i,j,k]<=1; 
