@@ -1,0 +1,87 @@
+reset;
+option solver xpress;
+option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
+
+param ZERO = 1e-4;
+# number of nodes
+param n >= 1, integer;
+#nodes in the first part
+param p >= 1, integer;
+
+set V := 1..n;
+set R:={u in V: u<=p};
+set B:={v in V: v>p};
+
+set RB =  R cross B;
+set E within RB;
+set V2 :=  {(i,j) in V cross V : i<j};
+
+param m := 1.0*card(E);
+param inv_m := 1.0/m;
+# edge weights
+param c{RB} default 0;
+param d{u in V} := card({v in V: (u,v) in E or (v,u) in E});
+param w{(i,j) in V2  } := 
+	# ((if( (i,j) in E) then c[i,j] else 0 )-d[i]*d[j]*inv_m)*inv_m
+	if( (i,j) in RB) then 
+		( c[i,j] -d[i]*d[j]*inv_m)*inv_m
+	else 
+		0
+;
+# edge inclusions
+param I{E};
+
+set V3 :=  {(i,j,k) in V cross V cross V : i<j and j<k};
+
+set Neighbor1{ i in V} := {j in V : (i,j) in E or (j,i) in E };
+set Neighbor2{ (i,j) in V2} := {k in V diff {i,j} : k in Neighbor1[i] or k in Neighbor1[j] };
+# data divorces.dat;
+# data SocialWorkJ.dat;
+# data wafa.dat;
+# data SupremeCourtnot.dat;
+# data SupremeCourtyes.dat;
+
+set RB2 := { (i,j,ii,jj) in RB cross RB : jj!=j or ii!=i};
+
+var x{V2} binary;
+
+
+# set Set1 := {(i,j,k) in V3 : not(w[i,j]<0 and w[j,k]<0)};
+# set Set2 := {(i,j,k) in V3 : not(w[i,j]<0 and w[i,k]<0)};
+# set Set3 := {(i,j,k) in V3 : not(w[i,k]<0 and w[j,k]<0)};
+
+# display Neighbor2[1,1];
+
+# exit;
+set Set1 := {(i,j,k) in V3 : j in Neighbor2[i,k] };
+set Set2 := {(i,j,k) in V3 : i in Neighbor2[j,k] };
+set Set3 := {(i,j,k) in V3 : k in Neighbor2[i,j] };
+
+# set Set1 := {(i,j,k) in V3 };
+# set Set2 := {(i,j,k) in V3 };
+# set Set3 := {(i,j,k) in V3 };
+
+var cut1{(i,j,k) in Set1} = +x[i,j]+x[j,k]-x[i,k];
+var cut2{(i,j,k) in Set2} = +x[i,j]-x[j,k]+x[i,k];
+var cut3{(i,j,k) in Set3} = -x[i,j]+x[j,k]+x[i,k];
+
+param _cut1{(i,j,k) in Set1};
+param _cut2{(i,j,k) in Set2};
+param _cut3{(i,j,k) in Set3};
+
+param n1;
+param n2;
+param n3;
+
+maximize modularity: sum{(i,j) in RB} w[i,j]*x[i,j];
+
+subject to ctr1 {(i,j,k) in Set1}: cut1[i,j,k]<=1; 
+subject to ctr2 {(i,j,k) in Set2}: cut2[i,j,k]<=1; 
+subject to ctr3 {(i,j,k) in Set3}: cut3[i,j,k]<=1; 
+
+solve modularity;
+
+
+display modularity;
+
+

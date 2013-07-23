@@ -22,33 +22,37 @@ param inv_m := 1.0/m;
 param c{RB} default 0;
 param d{u in V} := card({v in V: (u,v) in E or (v,u) in E});
 param w{(i,j) in V2  } := 
-	# (if( (i,j) in E) then c[i,j] else 0 )-d[i]*d[j]*inv_m
-	if( (i,j) in E) then 
+	# ((if( (i,j) in E) then c[i,j] else 0 )-d[i]*d[j]*inv_m)*inv_m
+	if( (i,j) in RB) then 
 		( c[i,j] -d[i]*d[j]*inv_m)*inv_m
 	else 
-		0;
+		0
+;
 # edge inclusions
 param I{E};
 
 set V3 :=  {(i,j,k) in V cross V cross V : i<j and j<k};
 
+set Neighbor1{ i in V} := {j in V : (i,j) in E or (j,i) in E };
+set Neighbor2{ (i,j) in V2} := {k in V diff {i,j} : k in Neighbor1[i] or k in Neighbor1[j] };
+
 # data divorces.dat;
 # data SocialWorkJ.dat;
-# data wafa.dat;
-data SupremeCourtnot.dat;
+data wafa.dat;
+# data SupremeCourtnot.dat;
 # data SupremeCourtyes.dat;
 
 set RB2 := { (i,j,ii,jj) in RB cross RB : jj!=j or ii!=i};
 
 var x{V2} binary;
 
+set Set1 := {(i,j,k) in V3 : j in Neighbor2[i,k] };
+set Set2 := {(i,j,k) in V3 : i in Neighbor2[j,k] };
+set Set3 := {(i,j,k) in V3 : k in Neighbor2[i,j] };
+
 # set Set1 := {(i,j,k) in V3 : not(w[i,j]<0 and w[j,k]<0)};
 # set Set2 := {(i,j,k) in V3 : not(w[i,j]<0 and w[i,k]<0)};
 # set Set3 := {(i,j,k) in V3 : not(w[i,k]<0 and w[j,k]<0)};
-
-set Set1 := {(i,j,k) in V3 };
-set Set2 := {(i,j,k) in V3 };
-set Set3 := {(i,j,k) in V3 };
 
 var cut1{(i,j,k) in Set1} = +x[i,j]+x[j,k]-x[i,k];
 var cut2{(i,j,k) in Set2} = +x[i,j]-x[j,k]+x[i,k];
@@ -68,9 +72,30 @@ subject to ctr1 {(i,j,k) in Set1}: cut1[i,j,k]<=1;
 subject to ctr2 {(i,j,k) in Set2}: cut2[i,j,k]<=1; 
 subject to ctr3 {(i,j,k) in Set3}: cut3[i,j,k]<=1; 
 
-solve modularity;
 
-
-display modularity;
-
+drop ctr1;
+drop ctr2;
+drop ctr3;
+repeat 
+{
+	printf "%020d\n",0; 
+	
+	solve modularity;
+	
+	let{(i,j,k) in Set1}_cut1[i,j,k] := cut1[i,j,k];
+	let{(i,j,k) in Set2}_cut2[i,j,k] := cut2[i,j,k];
+	let{(i,j,k) in Set3}_cut3[i,j,k] := cut3[i,j,k];
+	
+	let n1 := card({(i,j,k) in Set1 : _cut1[i,j,k] > 1});
+	let n2 := card({(i,j,k) in Set2 : _cut2[i,j,k] > 1});
+	let n3 := card({(i,j,k) in Set3 : _cut3[i,j,k] > 1});
+	
+	restore {(i,j,k) in Set1 : _cut1[i,j,k] > 1} ctr1[i,j,k];	
+	restore {(i,j,k) in Set2 : _cut2[i,j,k] > 1} ctr2[i,j,k];	
+	restore {(i,j,k) in Set3 : _cut3[i,j,k] > 1} ctr3[i,j,k];	
+	
+	display n1, n2, n3;
+	display modularity;
+	
+}until n1+n2+n3  == 0;
 
