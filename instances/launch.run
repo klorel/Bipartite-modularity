@@ -1,0 +1,30 @@
+
+model clique.mod;
+
+# data divorces.dat;
+data SocialWorkJ.dat;
+# data wafa.dat;
+# data SupremeCourtnot.dat;
+# data SupremeCourtyes.dat;
+
+
+option solver xpress;
+option xpress_options "outlev=1 ";
+# option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
+
+
+var x{V2} binary;
+
+var cut1{(i,j,k) in Set1} = +x[i,j]+x[j,k]-x[i,k];
+var cut2{(i,j,k) in Set2} = +x[i,j]-x[j,k]+x[i,k];
+var cut3{(i,j,k) in Set3} = -x[i,j]+x[j,k]+x[i,k];
+
+
+maximize modularity: sum{(i,j) in V2} w[i,j]*x[i,j];
+
+subject to ctr1 {(i,j,k) in Set1}: cut1[i,j,k]<=1; 
+subject to ctr2 {(i,j,k) in Set2}: cut2[i,j,k]<=1; 
+subject to ctr3 {(i,j,k) in Set3}: cut3[i,j,k]<=1; 
+
+# include clique_solve.run;
+include clique_solve_dyn.run;

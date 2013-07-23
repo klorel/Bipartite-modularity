@@ -1,0 +1,27 @@
+
+drop ctr1;
+drop ctr2;
+drop ctr3;
+
+repeat 
+{
+	printf "%020d\n",0; 
+	
+	solve modularity;
+	
+	let{(i,j,k) in Set1}_cut1[i,j,k] := cut1[i,j,k];
+	let{(i,j,k) in Set2}_cut2[i,j,k] := cut2[i,j,k];
+	let{(i,j,k) in Set3}_cut3[i,j,k] := cut3[i,j,k];
+	
+	let n1 := card({(i,j,k) in Set1 : _cut1[i,j,k] > 1});
+	let n2 := card({(i,j,k) in Set2 : _cut2[i,j,k] > 1});
+	let n3 := card({(i,j,k) in Set3 : _cut3[i,j,k] > 1});
+	
+	restore {(i,j,k) in Set1 : _cut1[i,j,k] > 1} ctr1[i,j,k];	
+	restore {(i,j,k) in Set2 : _cut2[i,j,k] > 1} ctr2[i,j,k];	
+	restore {(i,j,k) in Set3 : _cut3[i,j,k] > 1} ctr3[i,j,k];	
+	
+	display n1, n2, n3;
+	display modularity;
+	
+}until n1+n2+n3  == 0;
