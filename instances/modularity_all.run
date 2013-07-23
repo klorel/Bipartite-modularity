@@ -42,9 +42,13 @@ set RB2 := { (i,j,ii,jj) in RB cross RB : jj!=j or ii!=i};
 
 var x{V2} binary;
 
-set Set1 := {(i,j,k) in V3 : not(w[i,j]<0 and w[j,k]<0)};
-set Set2 := {(i,j,k) in V3 : not(w[i,j]<0 and w[i,k]<0)};
-set Set3 := {(i,j,k) in V3 : not(w[i,k]<0 and w[j,k]<0)};
+# set Set1 := {(i,j,k) in V3 : not(w[i,j]<0 and w[j,k]<0)};
+# set Set2 := {(i,j,k) in V3 : not(w[i,j]<0 and w[i,k]<0)};
+# set Set3 := {(i,j,k) in V3 : not(w[i,k]<0 and w[j,k]<0)};
+
+set Set1 := {(i,j,k) in V3 };
+set Set2 := {(i,j,k) in V3 };
+set Set3 := {(i,j,k) in V3 };
 
 var cut1{(i,j,k) in Set1} = +x[i,j]+x[j,k]-x[i,k];
 var cut2{(i,j,k) in Set2} = +x[i,j]-x[j,k]+x[i,k];
