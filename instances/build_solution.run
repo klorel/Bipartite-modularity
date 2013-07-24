@@ -1,0 +1,21 @@
+
+let un_coloried := {1..n};
+let nC := 0;
+let{i in 1..n} location[i] := -1;
+
+repeat {
+		let noeud := first( un_coloried );
+		
+		let un_coloried := un_coloried diff {noeud};
+		# display noeud, location[noeud];
+		if (location[noeud] == -1) then {
+			let location[noeud] := nC;
+			let nC := nC+1;
+		};
+		for{j in (noeud+1)..n : x[noeud, j]}{
+			let location[j] := location[noeud];
+		};
+} while card(un_coloried) > 0;
+
+# display location;
+# display nC;

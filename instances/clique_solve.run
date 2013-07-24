@@ -1,5 +1,9 @@
 
-solve modularity;
-	
-display modularity;
-	
+
+
+solve modularity >("log/"&name&"_"&formulation&"_"&run&".log");
+
+# solve modularity ;
+
+let solverTime			:= _solve_elapsed_time;
+let nbNodes 			:= num0(sub(solve_message, '@*^([0-9]+) branch@*', '\1'));

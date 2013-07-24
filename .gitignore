@@ -13,3 +13,7 @@
 *.a
 *.jpg
 *paper_rowandcolumngenimproved*
+*.dat
+*.log
+*.csv
+*.sol

@@ -1,30 +1,155 @@
+reset;
+
+# option gentimes 1;
+
+suffix lazy IN;
+
+
+
+option solver cplex;
+option cplex_options "time=1800 mipdisplay=1 varsel=4 cutpass=-1";
+
+# option solver xpress;
+# option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
 
 model clique.mod;
 
+set ids;
+param Instances{ids} symbolic;
+
+set formulations := {
+	N_min,
+	N_max,
+	N_inter,
+	N_union
+	# N_full 		
+};
+set runs := {
+	"DYN",
+	"ALL"
+	# "DYN"
+	# "ALL"
+	};
+data;
+param: ids: Instances :=
+	# 1	"south"
+	# 2	"SupremeCourtyes"
+	# 3	"SupremeCourtnot"
+	4 	"SocialWorkJ"
+	# 5	"wafa"
+	# 6	"divorces"
+	# 7	"hollyw"
+	# 8	"scotl"
+	# 9	"graphprod"
+	# 10 	"netscience"
+	;
+model;
+# pour la trace
+param optimalModularity	{ids};
+param 		instance_n	{ids};
+param 		instance_p	{ids};
+param 		instance_m	{ids};
+param nbClusters		{ids};
+param nbNodes			{ids};
+param solverTime		{ids};
+param transitivityViolation{ids};
+
 # data divorces.dat;
-data SocialWorkJ.dat;
 # data wafa.dat;
+# data SocialWorkJ.dat;
 # data SupremeCourtnot.dat;
+# reset data;
 # data SupremeCourtyes.dat;
+# data south.dat;
+# data scotl.dat;
+# data netscience.dat;
 
-
-option solver xpress;
-option xpress_options "outlev=1 ";
 # option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
 
+param location{1..n};
+set un_coloried ordered ;
+param noeud;
+param nC;
 
-var x{V2} binary;
-
-var cut1{(i,j,k) in Set1} = +x[i,j]+x[j,k]-x[i,k];
-var cut2{(i,j,k) in Set2} = +x[i,j]-x[j,k]+x[i,k];
-var cut3{(i,j,k) in Set3} = -x[i,j]+x[j,k]+x[i,k];
-
-
-maximize modularity: sum{(i,j) in V2} w[i,j]*x[i,j];
-
-subject to ctr1 {(i,j,k) in Set1}: cut1[i,j,k]<=1; 
-subject to ctr2 {(i,j,k) in Set2}: cut2[i,j,k]<=1; 
-subject to ctr3 {(i,j,k) in Set3}: cut3[i,j,k]<=1; 
-
+show;
+# exit;
+printf "%10s;%20s;%10s;%10s;%10s;%10s;%10s;%10s;%10s;%10s;%10s;%10s;%10s;%10s;%10s;%10s\n", "id", "instance", "n", "p","m","Nc", "Q", "Nodes", "Time", "Model", "Violations", "Vars", "MaxVars", "Ctrs", "MaxCtrs", "Run" > result.csv;
+for{id in ids, formulation in formulations, run in runs}{
+	printf "Running %s formulation %s run %s\n", Instances[id], formulation, run;
+	restore ctr1;
+	restore ctr2;
+	restore ctr3;
+	reset data n, p, m, inv_m, c, c2, w, d;
+	reset data location, I;
+	reset data _cut1, _cut2, _cut3;
+	reset data x, ctr1, ctr2, ctr3;
+	reset data R, B, RB, E, V, V2, V3;
+	reset data Set1, Set2, Set3;
+	reset data Neighbor1, Neighbor2, un_coloried;
+	# reset data lazy;
+	# expand;
+	data ("dat/"&Instances[id] & ".dat");
+	let KindOfN := formulation;
+	let{(i,j) in V2} x[i,j] := 0;
+	# display Set1;
+	# update data;
+	# display n;
+	let{(i,k,j) in Set1} ctr1[i,k,j].lazy := 1;
+	let{(j,k,i) in Set2} ctr2[j,k,i].lazy := 1;
+	let{(i,j,k) in Set3} ctr3[i,j,k].lazy := 1;
+	# if(run =="ALL") then
+	# display mySolve;
+	# include ("clique_solve" & myExt &".run");
+	# else
+	# exit;
+	include clique_solve.run;
+	# include sprintf(mySolve);
+	if (run=="ALL") then{
+		include clique_solve.run;
+	}else{
+		include clique_solve_dyn.run;
+	}
+	# show;
+	# exit;
+	# include clique_solve_dyn.run;
+	let instance_n			[id] := n;
+	let instance_p			[id] := p;
+	let instance_m			[id] := m;
+	let optimalModularity	[id] := modularity;
+	let transitivityViolation[id] := card({(i,j) in V2, k in V : j<k and x[i,j] and x[j,k] and not x[i,k]});
+	# break
+	include build_solution.run;
+	let nbClusters			[id] := nC;
+	
+	# display x;
+	printf ""> ("sol/"&Instances[id]&"_"&formulation&"_"&run&".sol");
+	printf{i in 1..n} "%6d\n", location[i]>>  ("sol/"&Instances[id]&"_"&formulation&"_"&run&".sol");
+	printf "%10d;%20s;%10d;%10d;%10d;%10d;%10f;%10d;%10f;%10s;%10d;%10d;%10d;%10d;%10d;%10s;\n",
+	id,
+	Instances[id],
+	instance_n[id],
+	instance_p[id],
+	instance_m[id],
+	nbClusters[id],
+	optimalModularity[id],
+	nbNodes[id],
+	solverTime[id],
+	formulation,
+	transitivityViolation[id],
+	card({(i,j) in V2 : x[i,j].astatus=="in"}),
+	card(V2),
+	card({(i,k,j) in Set1 : ctr1[i,k,j].astatus=="in"})+
+	card({(j,k,i) in Set2 : ctr2[j,k,i].astatus=="in"})+
+	card({(i,j,k) in Set3 : ctr3[i,j,k].astatus=="in"}),
+	card(Set1)+card(Set2)+card(Set3),
+	run
+	>>  result.csv;
+	# check for transitivity result
+};
+display optimalModularity, nbClusters, nbNodes, solverTime;
+# display card(Set1);
+# display card(Set2);
+# display card(Set3);
 # include clique_solve.run;
-include clique_solve_dyn.run;
+# include clique_solve_dyn.run;
+

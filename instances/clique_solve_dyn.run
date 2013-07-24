@@ -2,26 +2,32 @@
 drop ctr1;
 drop ctr2;
 drop ctr3;
-
+let solverTime	:= 0;
+let nbNodes		:= 0;
+printf "" > ("log/"&name&"_"&formulation&"_"&run&".log");
 repeat 
 {
-	printf "%020d\n",0; 
+
+	solve modularity >> ("log/"&name&"_"&formulation&"_"&run&".log");
 	
-	solve modularity;
+	let solverTime 	:= solverTime + _solve_elapsed_time;
+	let nbNodes 	:= nbNodes 	  + num0(sub(solve_message, '@*^([0-9]+) branch@*', '\1'));
 	
-	let{(i,j,k) in Set1}_cut1[i,j,k] := cut1[i,j,k];
-	let{(i,j,k) in Set2}_cut2[i,j,k] := cut2[i,j,k];
+	let{(i,k,j) in Set1}_cut1[i,k,j] := cut1[i,k,j];
+	let{(j,k,i) in Set2}_cut2[j,k,i] := cut2[j,k,i];
 	let{(i,j,k) in Set3}_cut3[i,j,k] := cut3[i,j,k];
 	
-	let n1 := card({(i,j,k) in Set1 : _cut1[i,j,k] > 1});
-	let n2 := card({(i,j,k) in Set2 : _cut2[i,j,k] > 1});
+	let n1 := card({(i,k,j) in Set1 : _cut1[i,k,j] > 1});
+	let n2 := card({(j,k,i) in Set2 : _cut2[j,k,i] > 1});
 	let n3 := card({(i,j,k) in Set3 : _cut3[i,j,k] > 1});
 	
-	restore {(i,j,k) in Set1 : _cut1[i,j,k] > 1} ctr1[i,j,k];	
-	restore {(i,j,k) in Set2 : _cut2[i,j,k] > 1} ctr2[i,j,k];	
+	restore {(i,k,j) in Set1 : _cut1[i,k,j] > 1} ctr1[i,k,j];	
+	restore {(j,k,i) in Set2 : _cut2[j,k,i] > 1} ctr2[j,k,i];	
 	restore {(i,j,k) in Set3 : _cut3[i,j,k] > 1} ctr3[i,j,k];	
 	
 	display n1, n2, n3;
 	display modularity;
 	
-}until n1+n2+n3  == 0;
+	
+}until n1+n2+n3 == 0;
+# exit;
