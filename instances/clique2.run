@@ -4,11 +4,12 @@ suffix lazy IN;
 # option solver cbc;
 # option cbc_options ;
 
-option solver cplex;
-option cplex_options "time=1800 mipdisplay=1 varsel=4 cutpass=-1";
+# option solver cplex;
+# option cplex_options "time=1800 mipdisplay=1 varsel=4 cutpass=-1";
 # option cplex_options "time=1800 mipdisplay=1 varsel=4";
 
-# option solver xpress;
+option solver xpress;
+option xpress_options "outlev=1";
 # option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
 
 model clique2.mod;
@@ -28,8 +29,8 @@ model clique2.mod;
 # option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
 
 param id 						:= 1;
-param name 			symbolic 	:= "wafa";
-# param name 			symbolic 	:= "south";
+# param name 			symbolic 	:= "wafa";
+param name 			symbolic 	:= "south";
 
 # reset data lazy;
 # expand;
@@ -43,9 +44,14 @@ data ("dat/"&name & ".dat");
 # let{(ir,ib, jr, jb) in RB2}ctr4[ir,ib,jr,jb].lazy:=1;
 
 # display RB2;
+display n;
+display p;
+display m;
+param solverTime;
+param nbNodes;
 
-solve modularity;
-
+# solve modularity;
+include clique2_solve_dyn.run;
 # display _solve_elapsed_time;
 # display num0(sub(solve_message, '@*^([0-9]+) branch@*', '\1'));
 

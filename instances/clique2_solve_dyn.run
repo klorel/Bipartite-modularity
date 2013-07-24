@@ -1,0 +1,39 @@
+
+drop ctr1;
+drop ctr2;
+drop ctr3;
+drop ctr4;
+
+let solverTime	:= 0;
+let nbNodes		:= 0;
+
+# printf "" > ("log/"&name&"_"&formulation&"_"&run&".log");
+repeat 
+{
+	solve modularity;
+	# solve modularity >> ("log/"&name&"_"&formulation&"_"&run&".log");
+	
+	let solverTime 	:= solverTime + _solve_elapsed_time;
+	let nbNodes 	:= nbNodes 	  + num0(sub(solve_message, '@*^([0-9]+) branch@*', '\1'));
+	
+	let{(ir, ib, jr, jb) in RB2}_cut1[ir, ib, jr, jb] := cut1[ir, ib, jr, jb];
+	let{(ir, ib, jr, jb) in RB2}_cut2[ir, ib, jr, jb] := cut2[ir, ib, jr, jb];
+	let{(ir, ib, jr, jb) in RB2}_cut3[ir, ib, jr, jb] := cut3[ir, ib, jr, jb];
+	let{(ir, ib, jr, jb) in RB2}_cut4[ir, ib, jr, jb] := cut4[ir, ib, jr, jb];
+	
+	let n1 := card({(ir, ib, jr, jb) in RB2 : _cut1[ir, ib, jr, jb] > 2});
+	let n2 := card({(ir, ib, jr, jb) in RB2 : _cut2[ir, ib, jr, jb] > 2});
+	let n3 := card({(ir, ib, jr, jb) in RB2 : _cut3[ir, ib, jr, jb] > 2});
+	let n4 := card({(ir, ib, jr, jb) in RB2 : _cut4[ir, ib, jr, jb] > 2});
+	
+	restore {(ir, ib, jr, jb) in RB2 : _cut1[ir, ib, jr, jb] > 1} ctr1[ir, ib, jr, jb];	
+	restore {(ir, ib, jr, jb) in RB2 : _cut2[ir, ib, jr, jb] > 1} ctr2[ir, ib, jr, jb];	
+	restore {(ir, ib, jr, jb) in RB2 : _cut3[ir, ib, jr, jb] > 1} ctr3[ir, ib, jr, jb];	
+	restore {(ir, ib, jr, jb) in RB2 : _cut4[ir, ib, jr, jb] > 1} ctr4[ir, ib, jr, jb];	
+	
+	display n1, n2, n3, n4;
+	display modularity;
+	
+	
+}until n1+n2+n3+n4 == 0;
+# exit;
