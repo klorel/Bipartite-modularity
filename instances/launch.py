@@ -58,5 +58,5 @@ for instance in instances:
 			CreateInstance(instance)
 			CreateRun(run)
 			CreateFormuation(formulation)
-			os.system( 'ampl launch2.run' )
+			os.system( 'ampl clique.run' )
 			

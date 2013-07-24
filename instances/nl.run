@@ -1,0 +1,39 @@
+reset;
+
+suffix lazy IN;
+# option solver cbc;
+# option cbc_options "outlev=1";
+
+option solver cplex;
+option cplex_options "time=1800 mipdisplay=1  varsel=4";
+# option cplex_options "time=1800 mipdisplay=1 varsel=4 cutpass=-1";
+
+# option solver xpress;
+# option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
+
+model nl.mod;
+
+# pour la trace
+
+# data divorces.dat;
+# data wafa.dat;
+# data SocialWorkJ.dat;
+# data SupremeCourtnot.dat;
+# reset data;
+# data SupremeCourtyes.dat;
+# data south.dat;
+# data scotl.dat;
+# data netscience.dat;
+
+# option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
+
+param id 						:= 1;
+param name 			symbolic 	:= "south";
+
+# reset data lazy;
+# expand;
+
+data ("dat/"&name & ".dat");
+let{r in R, b in B, cluster in Cluster}fortetlin[r,b,cluster].lazy:=1;
+
+solve;
