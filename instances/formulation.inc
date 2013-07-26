@@ -1,1 +1,1 @@
-"FULL"
+"UNION"

@@ -16,10 +16,10 @@ repeat
 	let solverTime 	:= solverTime + _solve_elapsed_time;
 	let nbNodes 	:= nbNodes 	  + num0(sub(solve_message, '@*^([0-9]+) branch@*', '\1'));
 	
-	let{(ir, ib, jr, jb) in RB2}_cut1[ir, ib, jr, jb] := cut1[ir, ib, jr, jb];
-	let{(ir, ib, jr, jb) in RB2}_cut2[ir, ib, jr, jb] := cut2[ir, ib, jr, jb];
-	let{(ir, ib, jr, jb) in RB2}_cut3[ir, ib, jr, jb] := cut3[ir, ib, jr, jb];
-	let{(ir, ib, jr, jb) in RB2}_cut4[ir, ib, jr, jb] := cut4[ir, ib, jr, jb];
+	let{(ir, ib, jr, jb) in RB2}_cut1[ir, ib, jr, jb] := +x[ir,ib]+x[ir,jb]+x[jr,ib]-x[jr,jb];
+	let{(ir, ib, jr, jb) in RB2}_cut2[ir, ib, jr, jb] := +x[ir,ib]+x[ir,jb]-x[jr,ib]+x[jr,jb];
+	let{(ir, ib, jr, jb) in RB2}_cut3[ir, ib, jr, jb] := +x[ir,ib]-x[ir,jb]+x[jr,ib]+x[jr,jb];
+	let{(ir, ib, jr, jb) in RB2}_cut4[ir, ib, jr, jb] := -x[ir,ib]+x[ir,jb]+x[jr,ib]+x[jr,jb];
 	
 	let n1 := card({(ir, ib, jr, jb) in RB2 : _cut1[ir, ib, jr, jb] > 2});
 	let n2 := card({(ir, ib, jr, jb) in RB2 : _cut2[ir, ib, jr, jb] > 2});

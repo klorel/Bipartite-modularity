@@ -1,33 +1,19 @@
 reset;
 
+# option gentimes 1;
+# option presolve 0;
 suffix lazy IN;
 
-# option solver cplex;
-# option cplex_options "time=1800 mipdisplay=1 varsel=4 cutpass=-1";
+include solver.inc;
 
-option solver xpress;
-option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
-
-model clique.mod;
-
-# pour la trace
-
-# data divorces.dat;
-# data wafa.dat;
-# data SocialWorkJ.dat;
-# data SupremeCourtnot.dat;
-# reset data;
-# data SupremeCourtyes.dat;
-# data south.dat;
-# data scotl.dat;
-# data netscience.dat;
-
-# option xpress_options "outlev=1 symmetry=0 cutstrategy=0";
+include clique.mod;
 
 param id 						:= include id.inc;
 param name 			symbolic 	:= include name.inc;
 param formulation 	symbolic 	:= include formulation.inc;
 param run  			symbolic 	:= include run.inc;
+
+display id, name, formulation, run;
 
 param location{1..n};
 set un_coloried ordered ;
@@ -37,19 +23,24 @@ param nC;
 param nbNodes;
 param solverTime;
 # exit;
-printf "Running %s formulation %s run %s\n", name, formulation, run;
+printf "clique %s %s %s\n", name, formulation, run;
 # reset data lazy;
 # expand;
 let KindOfN := formulation;
 data ("dat/"&name & ".dat");
 let{(i,j) in V2} x[i,j] := 0;
 
-display KindOfN;
+# display KindOfN;
+
+# let{(i,k,j) in Set1} ctr1[i,k,j].lazy := if( j in Neighbor1[i] inter Neighbor1[k]) then 0 else 1;
+# let{(j,k,i) in Set2} ctr2[j,k,i].lazy := if( i in Neighbor1[j] inter Neighbor1[k]) then 0 else 1;
+# let{(i,j,k) in Set3} ctr3[i,j,k].lazy := if( k in Neighbor1[i] inter Neighbor1[j]) then 0 else 1;
 
 let{(i,k,j) in Set1} ctr1[i,k,j].lazy := 1;
 let{(j,k,i) in Set2} ctr2[j,k,i].lazy := 1;
 let{(i,j,k) in Set3} ctr3[i,j,k].lazy := 1;
 
+# solve modularity;
 if (run=="ALL") then{
 	include clique_solve.run;
 }else{
@@ -57,8 +48,8 @@ if (run=="ALL") then{
 }
 
 # break
+# option gentime 1;
 include build_solution.run;
-
 # display x;
 printf ""> ("sol/"&name&"_"&formulation&"_"&run&".sol");
 printf{i in 1..n} "%6d\n", location[i]>>  ("sol/"&name&"_"&formulation&"_"&run&".sol");
@@ -82,10 +73,10 @@ printf "%10d;%20s;%10d;%10d;%10d;%10d;%10f;%10d;%10f;%10s;%10d;%10d;%10d;%10d;%1
 	card(Set1)+card(Set2)+card(Set3),
 	run
 	>>  result.csv;
-# check for transitivity result
-# display card(Set1);
-# display card(Set2);
-# display card(Set3);
-# include clique_solve.run;
-# include clique_solve_dyn.run;
 
+# printf "%s", solve_message > "solve_message.txt";
+
+# display sub(solve_message, '@*^([0-9]+) branch@*', '\1');
+# display sub(solve_message, '@*^([0-9]+) relmipgap*', '\1');
+
+# display num0(sub(solve_message, '@*^([0-9]+) relmipgap@*', '\1'));

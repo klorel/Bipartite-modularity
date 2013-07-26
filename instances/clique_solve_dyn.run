@@ -4,18 +4,18 @@ drop ctr2;
 drop ctr3;
 let solverTime	:= 0;
 let nbNodes		:= 0;
-printf "" > ("log/"&name&"_"&formulation&"_"&run&".log");
+
 repeat 
 {
 
-	solve modularity >> ("log/"&name&"_"&formulation&"_"&run&".log");
+	solve modularity;
 	
 	let solverTime 	:= solverTime + _solve_elapsed_time;
 	let nbNodes 	:= nbNodes 	  + num0(sub(solve_message, '@*^([0-9]+) branch@*', '\1'));
 	
-	let{(i,k,j) in Set1}_cut1[i,k,j] := cut1[i,k,j];
-	let{(j,k,i) in Set2}_cut2[j,k,i] := cut2[j,k,i];
-	let{(i,j,k) in Set3}_cut3[i,j,k] := cut3[i,j,k];
+	let{(i,k,j) in Set1}_cut1[i,k,j] := +x[i,j]+x[j,k]-x[i,k];
+	let{(j,k,i) in Set2}_cut2[j,k,i] := +x[i,j]-x[j,k]+x[i,k];
+	let{(i,j,k) in Set3}_cut3[i,j,k] := -x[i,j]+x[j,k]+x[i,k];
 	
 	let n1 := card({(i,k,j) in Set1 : _cut1[i,k,j] > 1});
 	let n2 := card({(j,k,i) in Set2 : _cut2[j,k,i] > 1});
